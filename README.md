@@ -49,7 +49,7 @@ sudo apt install kcachegrind
 Pre pokretanja, pozicionirati se u direktorijum projekta:
 
 ```bash
-cd ../cppcheck
+cd cppcheck
 ```
 
 Pokrenuti Cppcheck sledećom komandom:
@@ -63,7 +63,7 @@ cppcheck --project=compile_commands.json --enable=all --std=c++20 -inconclusive 
 Pre pokretanja, pozicionirati se u direktorijum projekta:
 
 ```bash
-cd ../clang-tidy
+cd clang-tidy
 ```
 
 Pokrenuti Clang-Tidy sledećom komandom:
@@ -77,7 +77,7 @@ run-clang-tidy -checks='clang-diagnostic-*, clang-analyzer-*' .. &> clang-tidy-r
 Pre pokretanja, pozicionirati se u direktorijum projekta:
 
 ```bash
-cd ../doxygen
+cd doxygen
 ```
 
 Dati skripti odgovarajuće dozvole i pokrenuti je:
@@ -92,7 +92,7 @@ chmod +x generate_doxygen.sh
 Pre pokretanja, pozicionirati se u direktorijum projekta:
 
 ```bash
-cd ../valgrind/memcheck
+cd valgrind/memcheck
 ```
 
 Dati skripti odgovarajuće dozvole i pokrenuti je:
@@ -107,7 +107,7 @@ chmod +x run_memcheck.sh
 Pre pokretanja, pozicionirati se u direktorijum projekta:
 
 ```bash
-cd ../valgrind/callgrind
+cd valgrind/callgrind
 ```
 
 Dati skripti odgovarajuće dozvole i pokrenuti je:
