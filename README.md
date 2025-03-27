@@ -84,7 +84,7 @@ Dati skripti odgovarajuće dozvole i pokrenuti je:
 
 ```bash
 chmod +x run_doxygen.sh
-./run_doxygen.sh
+./generate_doxygen.sh
 ```
 
 ### 4. Valgrind Memcheck
