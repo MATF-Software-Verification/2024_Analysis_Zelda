@@ -11,12 +11,7 @@ Heš kod commit-a: `73cf1f211b3a28f7a0cbdf429503f9396276cd3c`
 Cilj analize je poboljšanje stabilnosti i efikasnosti aplikacije korišćenjem statičkih i dinamičkih alata za analizu koda.  
 
 ## Izmena Projekta
-
-Izmena u *The Legend of Zelda* projektu uključuje posebnu instalaciju sledećih biblioteka koje se ne preuzimaju prilikom kloniranja projekta i moraju se skinuti zasebno:
-- `TMXParser`
-- `soil`
-- `sfml-audio`
-Takođe, potrebno je postaviti working directory na putanju do projekta kako bi sve funkcionalnosti pravilno radile.
+Potrebno je postaviti working directory na putanju do projekta kako bi sve funkcionalnosti pravilno radile.
 
 ### Primena custom.patch:
 - **cd Zelda**
