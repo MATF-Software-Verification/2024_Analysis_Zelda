@@ -83,7 +83,7 @@ cd ../doxygen
 Dati skripti odgovarajuće dozvole i pokrenuti je:
 
 ```bash
-chmod +x run_doxygen.sh
+chmod +x generate_doxygen.sh
 ./generate_doxygen.sh
 ```
 
