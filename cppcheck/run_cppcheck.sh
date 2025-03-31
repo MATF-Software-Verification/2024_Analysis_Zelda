@@ -7,7 +7,7 @@ if ! command -v cppcheck &> /dev/null; then
 fi
 
 
-PROJECT_PATH="/home/vuk/Desktop/Zelda-final/zelda/src/"
+PROJECT_PATH="${1:-$(pwd)}"
 OUTPUT_TXT="cpp_check_res.txt"  
 
 
