@@ -55,7 +55,8 @@ cd cppcheck
 Pokrenuti Cppcheck sledećom komandom:
 
 ```bash
-cppcheck --project=compile_commands.json --enable=all --std=c++20 -inconclusive --report-progress &> cpp_check_res.txt
+chmod +x run_cppcheck.sh
+./run_cppcheck.sh
 ```
 
 ### 2. Clang-Tidy
@@ -69,7 +70,8 @@ cd clang-tidy
 Pokrenuti Clang-Tidy sledećom komandom:
 
 ```bash
-run-clang-tidy -checks='clang-diagnostic-*, clang-analyzer-*' .. &> clang-tidy-report.txt
+chmod +x run_clang_tidy.sh
+./run_clang_tidy.sh
 ```
 
 ### 3. Doxygen
