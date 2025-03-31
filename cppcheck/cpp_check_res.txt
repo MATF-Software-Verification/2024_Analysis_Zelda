@@ -1,1020 +1,1653 @@
-Checking /home/vuk/Desktop/Zelda/src/debug.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/debug.cpp: __cplusplus=201103L...
-1/106 files checked 0% done
-Checking /home/vuk/Desktop/Zelda/src/game.cpp ...
-/home/vuk/Desktop/Zelda/lib/sfml-audio/include/SFML/Config.hpp:98:0: error: #error This operating system is not supported by SFML library [preprocessorErrorDirective]
-    #error This operating system is not supported by SFML library
-^
-2/106 files checked 1% done
-Checking /home/vuk/Desktop/Zelda/src/hud.cpp ...
-3/106 files checked 2% done
-Checking /home/vuk/Desktop/Zelda/src/main.cpp ...
-4/106 files checked 3% done
-Checking /home/vuk/Desktop/Zelda/src/utils.cpp ...
-5/106 files checked 4% done
-Checking /home/vuk/Desktop/Zelda/src/screen.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/screen.cpp: __cplusplus=201103L...
-6/106 files checked 5% done
-Checking /home/vuk/Desktop/Zelda/src/screen/title_screen.cpp ...
-7/106 files checked 6% done
-Checking /home/vuk/Desktop/Zelda/src/screen/level_screen.cpp ...
-8/106 files checked 7% done
-Checking /home/vuk/Desktop/Zelda/src/screen/over_screen.cpp ...
-9/106 files checked 8% done
-Checking /home/vuk/Desktop/Zelda/src/screen/win_screen.cpp ...
-10/106 files checked 9% done
-Checking /home/vuk/Desktop/Zelda/src/audio/music.cpp ...
-11/106 files checked 10% done
-Checking /home/vuk/Desktop/Zelda/src/audio/sound.cpp ...
-12/106 files checked 11% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/animation.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/animation.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/animation.hpp:11:11: style: inconclusive: Technically the member function 'Animation::width' can be const. [functionConst]
-    float width();
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.cpp:66:18: note: Technically the member function 'Animation::width' can be const.
-float Animation::width() {
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.hpp:11:11: note: Technically the member function 'Animation::width' can be const.
-    float width();
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.hpp:12:11: style: inconclusive: Technically the member function 'Animation::height' can be const. [functionConst]
-    float height();
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.cpp:70:18: note: Technically the member function 'Animation::height' can be const.
-float Animation::height() {
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.hpp:12:11: note: Technically the member function 'Animation::height' can be const.
-    float height();
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.hpp:7:5: style: Class 'Animation' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-    Animation(SpriteSet* spriteset);
-    ^
-/home/vuk/Desktop/Zelda/src/math/vec2.hpp:31:28: style: Parameter 'v' can be declared with const [constParameter]
-    vec2& operator-=(vec2& v) {
-                           ^
-13/106 files checked 12% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/drawable.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/drawable.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/drawable.hpp:8:6: warning: inconclusive: Class 'Drawable' which has virtual members does not have a virtual destructor. [virtualDestructor]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:8:6: [31m[35mwarning: inconclusive:[39m Class 'Drawable' which has virtual members does not have a virtual destructor. [virtualDestructor][0m
     ~Drawable();
      ^
-14/106 files checked 13% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/font.cpp ...
-15/106 files checked 14% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/hitbox.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/hitbox.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/math/rectangle.hpp:33:10: style: The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Update(double delta);
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/drawable.hpp:17:18: note: Virtual function in base class
-    virtual void Update(double delta) = 0;
-                 ^
-/home/vuk/Desktop/Zelda/src/math/rectangle.hpp:33:10: note: Function in derived class
-    void Update(double delta);
-         ^
-/home/vuk/Desktop/Zelda/src/math/rectangle.hpp:34:10: style: The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Draw() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/drawable.hpp:18:18: note: Virtual function in base class
-    virtual void Draw() const = 0;
-                 ^
-/home/vuk/Desktop/Zelda/src/math/rectangle.hpp:34:10: note: Function in derived class
-    void Draw() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox.hpp:11:10: style: The function 'IsHitbox' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    bool IsHitbox() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/drawable.hpp:10:18: note: Virtual function in base class
-    virtual bool IsHitbox() const;
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox.hpp:11:10: note: Function in derived class
-    bool IsHitbox() const;
-         ^
-16/106 files checked 15% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: style: The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    Sprite* CurrentSprite(vec2f& sprite_position) const;
-            ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox.hpp:13:21: note: Virtual function in base class
-    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
-                    ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: note: Function in derived class
-    Sprite* CurrentSprite(vec2f& sprite_position) const;
-            ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: style: The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    Sprite* CurrentSprite() const;
-            ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox.hpp:12:21: note: Virtual function in base class
-    virtual Sprite* CurrentSprite() const = 0;
-                    ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: note: Function in derived class
-    Sprite* CurrentSprite() const;
-            ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: style: The function 'CollisionType' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    Collision CollisionType(RectangleShape* rectangle) const;
-              ^
-/home/vuk/Desktop/Zelda/src/math/rectangle.hpp:28:23: note: Virtual function in base class
-    virtual Collision CollisionType(RectangleShape* rectangle) const;
-                      ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: note: Function in derived class
-    Collision CollisionType(RectangleShape* rectangle) const;
-              ^
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.cpp:22:17: style: C-style pointer casting [cstyleCast]
-    Hitbox* h = (Hitbox*) rectangle;
-                ^
-17/106 files checked 16% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/pixelmap.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/pixelmap.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/pixelmap.cpp:5:5: performance: Variable 'map_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
-    map_ = std::vector<std::vector<bool>>(height, std::vector<bool>(width, false));
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:7:5: [31mstyle:[39m Class 'Animation' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    Animation(SpriteSet* spriteset);
     ^
-/home/vuk/Desktop/Zelda/src/graphic/pixelmap.cpp:11:37: style: Clarify calculation precedence for '<<' and '?'. [clarifyCalculation]
-            std::cout << map_[i][j] ? '1' : '0';
-                                    ^
-18/106 files checked 16% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/sprite.cpp ...
-19/106 files checked 17% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/spritesheet.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/spritesheet.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/spritesheet.cpp:10:5: performance: Variable 'texture_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
-    texture_ = LoadTexture(path);
-    ^
-20/106 files checked 18% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/sprite_set.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/sprite_set.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/sprite_set.hpp:11:9: style: inconclusive: Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list. [initializerList]
-    int idle_index;
-        ^
-/home/vuk/Desktop/Zelda/src/graphic/sprite_set.cpp:12:9: note: Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
-        idle_index(idle_index),
-        ^
-/home/vuk/Desktop/Zelda/src/graphic/sprite_set.hpp:11:9: note: Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
-    int idle_index;
-        ^
-21/106 files checked 19% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect.cpp ...
-22/106 files checked 20% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/callback_effect.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/callback_effect.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/callback_effect.hpp:11:5: style: Class 'CallbackEffect' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-    CallbackEffect(const std::function<void()>& callback);
-    ^
-/home/vuk/Desktop/Zelda/src/graphic/callback_effect.hpp:14:10: style: The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Leave();
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:16:18: note: Virtual function in base class
-    virtual void Leave();
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/callback_effect.hpp:14:10: note: Function in derived class
-    void Leave();
-         ^
-23/106 files checked 21% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/bounce.cpp ...
-24/106 files checked 22% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/fade.cpp ...
-25/106 files checked 23% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/float.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/float.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:16:11: style: inconclusive: Member variable 'Float::speed_' is in the wrong place in the initializer list. [initializerList]
-    float speed_;
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.cpp:10:9: note: Member variable 'Float::speed_' is in the wrong place in the initializer list.
-        speed_(-height / duration),
-        ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:16:11: note: Member variable 'Float::speed_' is in the wrong place in the initializer list.
-    float speed_;
-          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:10:10: style: The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    bool IsFinished() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:11:18: note: Virtual function in base class
-    virtual bool IsFinished() const = 0;
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:10:10: note: Function in derived class
-    bool IsFinished() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:12:10: style: The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Tick(double delta);
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:13:18: note: Virtual function in base class
-    virtual void Tick(double delta) = 0;
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:12:10: note: Function in derived class
-    void Tick(double delta);
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:13:10: style: The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Render() const;
-         ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:14:18: note: Virtual function in base class
-    virtual void Render() const = 0;
-                 ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/float.hpp:13:10: note: Function in derived class
-    void Render() const;
-         ^
-26/106 files checked 24% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/rotation_fade.cpp ...
-27/106 files checked 25% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/overlay.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/overlay.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:554:59: warning: Assert statement calls a function which may have desired side effects: 'align'. [assertWithSideEffect]
-            assert(m_begin == m_static_memory && m_ptr == align(m_begin));    // Verify that no memory is allocated yet
-                                                          ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:657:9: warning: Member variable 'xml_base::m_name_size' is not initialized in the constructor. [uninitMemberVar]
-        xml_base()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:657:9: warning: Member variable 'xml_base::m_value_size' is not initialized in the constructor. [uninitMemberVar]
-        xml_base()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:810:9: warning: Member variable 'xml_attribute::m_prev_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_attribute()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:810:9: warning: Member variable 'xml_attribute::m_next_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_attribute()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node::m_last_node' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node::m_last_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node::m_prev_sibling' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node::m_next_sibling' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:1725:14: performance: inconclusive: Technically the member function 'rapidxml::xml_document::parse_bom' can be static (but you may consider moving to unnamed namespace). [functionStatic]
-        void parse_bom(Ch *&text)
-             ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: style: Class 'xml_node' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:28:9: style: Class 'file' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        file(const char *filename)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:51:9: style: Class 'file' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        file(std::basic_istream<Ch> &stream)
-        ^
-/home/vuk/Desktop/Zelda/src/map/tileset.hpp:16:5: style: Class 'Tileset' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:16:5: [31mstyle:[39m Class 'Tileset' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Tileset(TSX::Tileset* tileset);
     ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:13:10: style: The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    bool IsFinished() const;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:12:2: [31mstyle:[39m Class 'TileMap' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+ TileMap(const char* s);
+ ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:7:5: [31mstyle:[39m Class 'AI' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    AI(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/hud.hpp:12:5: [31mstyle:[39m Class 'Hud' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    Hud(Link* player);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:33:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:11:18: note: Virtual function in base class
-    virtual bool IsFinished() const = 0;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta) = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:13:10: note: Function in derived class
-    bool IsFinished() const;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:33:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:15:10: style: The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Tick(double delta);
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:34:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:13:18: note: Virtual function in base class
-    virtual void Tick(double delta) = 0;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:15:10: note: Function in derived class
-    void Tick(double delta);
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:34:10: [2mnote:[0m Function in derived class
+    void Draw() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:16:10: style: The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
-    void Render() const;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:11:10: [31mstyle:[39m The function 'IsHitbox' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsHitbox() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:14:18: note: Virtual function in base class
-    virtual void Render() const = 0;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:10:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsHitbox() const;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/overlay.hpp:16:10: note: Function in derived class
-    void Render() const;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:11:10: [2mnote:[0m Function in derived class
+    bool IsHitbox() const;
          ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:40:20: style: Local variable 'size' shadows outer function [shadowFunction]
-            size_t size = stream.tellg();
-                   ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:79:21: note: Shadowed declaration
-        std::size_t size() const
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:23:10: [31mstyle:[39m The function 'IsEntity' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsEntity() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsEntity() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:23:10: [2mnote:[0m Function in derived class
+    bool IsEntity() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:30:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite() const = 0;
                     ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:40:20: note: Shadow variable
-            size_t size = stream.tellg();
-                   ^
-28/106 files checked 26% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/timer.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/timer.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:11:10: style: The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:30:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:31:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:31:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:25:10: [31mstyle:[39m The function 'moving' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool moving() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:25:18: [2mnote:[0m Virtual function in base class
+    virtual bool moving() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:25:10: [2mnote:[0m Function in derived class
+    bool moving() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:26:10: [31mstyle:[39m The function 'IsMob' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsMob() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:26:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsMob() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:26:10: [2mnote:[0m Function in derived class
+    bool IsMob() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:28:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:28:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:29:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite() const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:29:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:34:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:34:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:48:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Damage(Entity* from, int damage);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+    virtual void Damage(Entity* from, int damage);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:48:10: [2mnote:[0m Function in derived class
+    void Damage(Entity* from, int damage);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:50:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:50:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:51:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:51:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:37:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Damage(Entity* from, int amount);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+    virtual void Damage(Entity* from, int damage);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:37:10: [2mnote:[0m Function in derived class
+    void Damage(Entity* from, int amount);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:39:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+    virtual bool CollidesWith(RectangleShape const * rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:39:10: [2mnote:[0m Function in derived class
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:40:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:40:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:42:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape*rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:42:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape*rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:44:10: [31mstyle:[39m The function 'Die' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Die();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:37:18: [2mnote:[0m Virtual function in base class
+    virtual void Die();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:44:10: [2mnote:[0m Function in derived class
+    void Die();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:37:10: [31mstyle:[39m The function 'CollidablesFor' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:37:10: [2mnote:[0m Function in derived class
+    void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:43:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:43:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:44:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:44:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/vec2.hpp:31:28: [31mstyle:[39m Parameter 'v' can be declared with const [constParameter][0m
+    vec2& operator-=(vec2& v) {
+                           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:7:9: [31mwarning:[39m Member variable 'Entity::level_' is not initialized in the constructor. [uninitMemberVar][0m
+Entity::Entity(float x, float y, float width, float height) :
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:50:10: [31m[35mstyle: inconclusive:[39m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list. [initializerList][0m
+    bool is_vulnerable_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:14:9: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
+        is_vulnerable_(true)
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:50:10: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
+    bool is_vulnerable_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:13:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite(vec2f& sprite_position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:13:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite(vec2f& sprite_position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:14:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite() const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:14:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:16:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:10:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:10:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:12:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Damage(Entity* from, int damage);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+    virtual void Damage(Entity* from, int damage);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:12:10: [2mnote:[0m Function in derived class
+    void Damage(Entity* from, int damage);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:13:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+    virtual void Dead();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:13:10: [2mnote:[0m Function in derived class
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.hpp:22:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.hpp:22:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:91:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        if(collidable->IsEntity() && ((Entity*)collidable)->IsMob()) {
+                                      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:92:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            Mob* mob = (Mob*)collidable;
+                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:21:10: [31m[35mstyle: inconclusive:[39m Member variable 'Door::opened_' is in the wrong place in the initializer list. [initializerList][0m
+    bool opened_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:16:9: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
+        opened_(false)
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:21:10: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
+    bool opened_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:19:5: [31mperformance:[39m Variable 'tiles_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+    tiles_ = std::vector<std::vector<int>>(2, std::vector<int>(2));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    open_effect_ = new Overlay(0.1, position_.x, position_.y, tileset, animation_overlay, [this]{
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    open_effect_ = new Overlay(0.1, position_.x, position_.y, tileset, animation_overlay, [this]{
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:11:5: [31mstyle:[39m Class 'CallbackEffect' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    CallbackEffect(const std::function<void()>& callback);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:16:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:18:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+    virtual void Dead();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:18:10: [2mnote:[0m Function in derived class
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:14:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
+    virtual void Leave();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:14:10: [2mnote:[0m Function in derived class
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:11:18: note: Virtual function in base class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:11:10: note: Function in derived class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:13:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:13:10: style: The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:13:18: note: Virtual function in base class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:13:10: note: Function in derived class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:15:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:14:10: style: The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:14:18: note: Virtual function in base class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/timer.hpp:14:10: note: Function in derived class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:16:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-29/106 files checked 27% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/menu.cpp ...
-30/106 files checked 28% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/dialog.cpp ...
-31/106 files checked 29% done
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/blink.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/graphic/effect/blink.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/graphic/effect/blink.hpp:9:10: style: The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.hpp:10:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        Link* player = (Link*) mob;
+                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.hpp:10:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        Link* player = (Link*) mob;
+                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.hpp:12:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.hpp:12:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.cpp:9:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return rectangle->IsEntity() && ((Entity*)rectangle)->type() == PLAYER;
+                                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event/map_transition.hpp:11:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event/map_transition.hpp:11:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:10:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:10:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:12:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:13:18: note: Virtual function in base class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/blink.hpp:9:10: note: Function in derived class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:12:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/blink.hpp:10:10: style: The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:13:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-/home/vuk/Desktop/Zelda/src/graphic/effect.hpp:14:18: note: Virtual function in base class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-/home/vuk/Desktop/Zelda/src/graphic/effect/blink.hpp:10:10: note: Function in derived class
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:13:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-32/106 files checked 30% done
-Checking /home/vuk/Desktop/Zelda/src/entity.cpp ...
-33/106 files checked 31% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob.cpp ...
-34/106 files checked 32% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/link.cpp ...
-35/106 files checked 33% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/guard.cpp ...
-36/106 files checked 33% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/stalfos.cpp ...
-37/106 files checked 34% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/moldorm.cpp ...
-38/106 files checked 35% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/link_follower.cpp ...
-39/106 files checked 36% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/action.cpp ...
-40/106 files checked 37% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/action/move.cpp ...
-41/106 files checked 38% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/action/attack.cpp ...
-42/106 files checked 39% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/action/push.cpp ...
-43/106 files checked 40% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai.cpp ...
-44/106 files checked 41% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/chase.cpp ...
-45/106 files checked 42% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/chase_evade.cpp ...
-46/106 files checked 43% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/follower.cpp ...
-47/106 files checked 44% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/player.cpp ...
-48/106 files checked 45% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/wander.cpp ...
-49/106 files checked 46% done
-Checking /home/vuk/Desktop/Zelda/src/entity/mob/ai/rotation_chase.cpp ...
-50/106 files checked 47% done
-Checking /home/vuk/Desktop/Zelda/src/entity/object.cpp ...
-51/106 files checked 48% done
-Checking /home/vuk/Desktop/Zelda/src/entity/object/plant.cpp ...
-52/106 files checked 49% done
-Checking /home/vuk/Desktop/Zelda/src/entity/object/pole_switch.cpp ...
-53/106 files checked 50% done
-Checking /home/vuk/Desktop/Zelda/src/entity/object/pole.cpp ...
-54/106 files checked 50% done
-Checking /home/vuk/Desktop/Zelda/src/entity/item.cpp ...
-55/106 files checked 51% done
-Checking /home/vuk/Desktop/Zelda/src/entity/item/rupee.cpp ...
-56/106 files checked 52% done
-Checking /home/vuk/Desktop/Zelda/src/entity/item/key.cpp ...
-57/106 files checked 53% done
-Checking /home/vuk/Desktop/Zelda/src/entity/event.cpp ...
-58/106 files checked 54% done
-Checking /home/vuk/Desktop/Zelda/src/entity/event/map_transition.cpp ...
-59/106 files checked 55% done
-Checking /home/vuk/Desktop/Zelda/src/entity/door.cpp ...
-60/106 files checked 56% done
-Checking /home/vuk/Desktop/Zelda/src/entity/door/key_door.cpp ...
-61/106 files checked 57% done
-Checking /home/vuk/Desktop/Zelda/src/entity/door/boss_door.cpp ...
-62/106 files checked 58% done
-Checking /home/vuk/Desktop/Zelda/src/map/tile_map.cpp ...
-63/106 files checked 59% done
-Checking /home/vuk/Desktop/Zelda/src/map/tileset.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/map/tileset.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/src/map/tileset.hpp:12:9: style: inconclusive: Member variable 'Tileset::frames' is in the wrong place in the initializer list. [initializerList]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.cpp:13:58: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return !current_effect_ && rectangle->IsEntity() && ((Entity*) rectangle)->type() == PLAYER;
+                                                         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.cpp:18:29: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        HandleCollisionWith((Mob*)from);
+                            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.hpp:21:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.hpp:21:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:14:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:16:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:17:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:18:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
+    virtual void Leave();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:18:10: [2mnote:[0m Function in derived class
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.cpp:31:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        ((Link*)mob)->AddSmallKey(name_);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.cpp:33:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        ((Link*)mob)->AddBossKey(name_);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.cpp:47:6: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    ((Link*) mob)->UpdateRupees(amount);
+     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:6: [31mwarning:[39m Member variable 'Mob::ai_' is not initialized in the constructor. [uninitMemberVar][0m
+Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
+     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:54:13: [31m[35mstyle: inconclusive:[39m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list. [initializerList][0m
+    Action* idle_action_;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:20:9: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
+        idle_action_(idle_action),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:54:13: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
+    Action* idle_action_;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:11:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsBlocking() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsBlocking() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:11:10: [2mnote:[0m Function in derived class
+    bool IsBlocking() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:12:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:12:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:13:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:12:10: [31mstyle:[39m The function 'IsTemporary' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsTemporary() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:16:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsTemporary() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:12:10: [2mnote:[0m Function in derived class
+    bool IsTemporary() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:13:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsBlocking() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsBlocking() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:13:10: [2mnote:[0m Function in derived class
+    bool IsBlocking() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:14:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:16:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:16:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:130:42: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            if(candidate->IsEntity() && ((Entity*) candidate)->IsVulnerable()) {
+                                         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:135:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+                    ((Entity*) candidate)->Damage(this, 1);
+                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:234:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            Entity* entity = (Entity*) candidate;
+                             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:322:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return !rectangle->IsEntity() || ((Entity*)rectangle)->type() != type_;
+                                      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:173:11: [31mstyle:[39m The scope of the variable 'dist' can be reduced. [variableScope][0m
+    float dist;
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:63: [31m[35mstyle: inconclusive:[39m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'. [funcArgNamesDifferent][0m
+Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
+                                                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:20:62: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
+    Mob(float x, float y, float width, float height, Action* idle_action_);
+                                                             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:63: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
+Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
+                                                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:111:33: [31mperformance:[39m Function parameter 'name' should be passed by const reference. [passedByValue][0m
+Action* Mob::action(std::string name) const {
+                                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.cpp:9:21: [31mstyle:[39m Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm][0m
+        animations_.push_back(new Animation(spriteset));
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.cpp:5:9: [31mwarning:[39m Member variable 'Attack::hitbox_' is not initialized in the constructor. [uninitMemberVar][0m
+Attack::Attack(Mob* mob, const std::vector<SpriteSet*>& animations) : super(mob, animations) {
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite(vec2f& sprite_position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite(vec2f& sprite_position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite() const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [31mstyle:[39m The function 'CollisionType' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Collision CollisionType(RectangleShape* rectangle) const;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:28:23: [2mnote:[0m Virtual function in base class
+    virtual Collision CollisionType(RectangleShape* rectangle) const;
+                      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [2mnote:[0m Function in derived class
+    Collision CollisionType(RectangleShape* rectangle) const;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:11:10: [31mstyle:[39m The function 'Enter' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Enter();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:19:18: [2mnote:[0m Virtual function in base class
+    virtual void Enter();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:11:10: [2mnote:[0m Function in derived class
+    void Enter();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:12:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:13:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:20:18: [2mnote:[0m Virtual function in base class
+    virtual void Leave();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:13:10: [2mnote:[0m Function in derived class
+    void Leave();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:20:12: [31m[35mstyle: inconclusive:[39m Member variable 'Chase::wander_' is in the wrong place in the initializer list. [initializerList][0m
+    Wander wander_;
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:7:9: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
+        wander_(mob),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:20:12: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
+    Wander wander_;
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Detected' can be const. [functionConst][0m
+    bool Detected(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:14:13: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
+bool Chase::Detected(Entity* destiny_entity){
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:14:10: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
+    bool Detected(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Lost' can be const. [functionConst][0m
+    bool Lost(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:33:13: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
+bool Chase::Lost(Entity* destiny_entity){
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:15:10: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
+    bool Lost(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:16:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+    Dir Evade(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:51:12: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
+Dir Chase::Evade(Dir aux){
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:16:9: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
+    Dir Evade(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:10:5: [31mstyle:[39m Class 'Wander' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    Wander(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:10:5: [31mstyle:[39m Class 'Chase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    Chase(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:12:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:12:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Debug() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:13:10: [2mnote:[0m Function in derived class
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:81:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
+                direction_ = (dying)?((diffX>0)?Dir::RIGHT:Dir::LEFT):((diffX>0)?Dir::LEFT:Dir::RIGHT);
+                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:80:17: [2mnote:[0m Assuming that condition '!dying' is not redundant
+            if (!dying && diffYaux < mob_->height())
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:81:31: [2mnote:[0m Condition 'dying' is always false
+                direction_ = (dying)?((diffX>0)?Dir::RIGHT:Dir::LEFT):((diffX>0)?Dir::LEFT:Dir::RIGHT);
+                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:83:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
+                direction_ = (dying)?((diffX>0)?Dir::LEFT:Dir::RIGHT):((diffY>0)?Dir::UP:Dir::DOWN);
+                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:82:22: [2mnote:[0m Assuming that condition '!dying' is not redundant
+            else if (!dying && diffXaux < mob_->width())
+                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:83:31: [2mnote:[0m Condition 'dying' is always false
+                direction_ = (dying)?((diffX>0)?Dir::LEFT:Dir::RIGHT):((diffY>0)?Dir::UP:Dir::DOWN);
+                              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:20:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+    const Dir aux = mob_->facing();
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:37:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+    const Dir aux = mob_->facing();
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [31m[35mstyle: inconclusive:[39m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list. [initializerList][0m
+    Wander wander_;
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:6:9: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
+        wander_(mob),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
+    Wander wander_;
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Detected' can be const. [functionConst][0m
+    bool Detected(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:12:18: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
+bool ChaseEvade::Detected(Entity* destiny_entity){
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
+    bool Detected(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Lost' can be const. [functionConst][0m
+    bool Lost(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:31:18: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
+bool ChaseEvade::Lost(Entity* destiny_entity){
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
+    bool Lost(Entity* destiny_entity);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+    Dir Contrary(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:48:17: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
+Dir ChaseEvade::Contrary(Dir aux){
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
+    Dir Contrary(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+    Dir Evade(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:58:17: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
+Dir ChaseEvade::Evade(Dir aux){
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
+    Dir Evade(Dir aux);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:10:5: [31mstyle:[39m Class 'ChaseEvade' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    ChaseEvade(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Debug() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [2mnote:[0m Function in derived class
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:18:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+    const Dir aux = mob_->facing();
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:35:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+    const Dir aux = mob_->facing();
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:11:5: [31mstyle:[39m Class 'Follower' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    Follower(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:13:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:14:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Debug() const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:14:10: [2mnote:[0m Function in derived class
+    void Debug() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/player.hpp:9:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/player.hpp:9:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:8:5: [31mstyle:[39m Class 'RotationChase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    RotationChase(Mob* mob);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:28:9: [31mstyle:[39m Class 'MoldormHitbox' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+        MoldormHitbox(Moldorm* moldorm);
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:57:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:57:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:58:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+    virtual bool CollidesWith(RectangleShape const * rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:58:10: [2mnote:[0m Function in derived class
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:59:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:59:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:66:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:66:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:67:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:67:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:69:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+    virtual void Dead();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:69:10: [2mnote:[0m Function in derived class
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.cpp:9:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    Moldorm* moldorm = (Moldorm*) mob_;
+                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/guard.hpp:17:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+    virtual void Update(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/guard.hpp:17:10: [2mnote:[0m Function in derived class
+    void Update(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:13:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:15:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:16:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:11:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:11:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:13:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:14:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:9:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:9:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:10:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:10:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:14:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:16:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:17:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:87:15: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            (((Entity*)rectangle)->type() != ENEMY && ((Entity*)rectangle)->type() != BOSS) ||
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:89:18: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+                ((Entity*)rectangle)->type() != BOSS ||
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:137:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            ((Entity*) rectangle)->type() != FOLLOWER
+             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:24:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+    virtual bool CollidesWith(RectangleShape const * rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:24:10: [2mnote:[0m Function in derived class
+    bool CollidesWith(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:25:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+    virtual bool HandleCollisionWith(Mob* mob);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:25:10: [2mnote:[0m Function in derived class
+    bool HandleCollisionWith(Mob* mob);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:27:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape*rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:27:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape*rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.cpp:62:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+            ((Entity*)rectangle)->type() != BOSS ||
+             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.cpp:87:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+                    ((Entity*) rectangle)->type() != PLAYER
+                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:18:17: [31m[35mstyle: inconclusive:[39m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list. [initializerList][0m
+        Sprite* sprite_;
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:119:9: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
+        sprite_(sprite),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:18:17: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
+        Sprite* sprite_;
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+        hitbox_(new MoldormHitbox(this))
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+        hitbox_(new MoldormHitbox(this))
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:100:64: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return rectangle != hitbox_ && (!rectangle->IsEntity() || ((Entity*)rectangle)->type() == PLAYER);
+                                                               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:106:0: [31mstyle:[39m Consider using std::any_of algorithm instead of a raw loop. [useStlAlgorithm][0m
+            if(node->CollidesWith(rectangle))
+^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.hpp:17:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+    virtual void Dead();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.hpp:17:10: [2mnote:[0m Function in derived class
+    void Dead();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.cpp:41:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    Link* player = (Link*)level_->main_player();
+                   ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.hpp:14:10: [31mstyle:[39m The function 'CanReceiveDamageFrom' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:26:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.hpp:14:10: [2mnote:[0m Function in derived class
+    bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.cpp:20:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return rectangle->IsEntity() && ((Entity*) rectangle)->type() == PLAYER;
+                                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:21:10: [31mwarning:[39m The class 'Pole' defines member variable with name 'type_' also defined in its parent class 'Entity'. [duplInheritedMember][0m
+    Type type_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:48:16: [2mnote:[0m Parent variable 'Entity::type_'
+    EntityType type_;
+               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:21:10: [2mnote:[0m Derived variable 'Pole::type_'
+    Type type_;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:16:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:16:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:18:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:18:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite() const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:11:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite() const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+    virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
+                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:12:13: [2mnote:[0m Function in derived class
+    Sprite* CurrentSprite(vec2f& position) const;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:13:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+    virtual bool CanCollideWith(RectangleShape* rectangle) const;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:13:10: [2mnote:[0m Function in derived class
+    bool CanCollideWith(RectangleShape* rectangle) const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:15:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+    virtual void Draw() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:15:10: [2mnote:[0m Function in derived class
+    void Draw() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:16:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Damage(Entity* from, int amount);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+    virtual void Damage(Entity* from, int damage);
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:16:10: [2mnote:[0m Function in derived class
+    void Damage(Entity* from, int amount);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.cpp:41:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    return !rectangle->IsEntity() || ((Entity*)rectangle)->type() == PLAYER;
+                                      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:35:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+ void Finalize();
+      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:155:12: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
+void Game::Finalize()
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:35:7: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
+ void Finalize();
+      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:41:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+    void Exit();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:241:12: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
+void Game::Exit() {
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:41:10: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
+    void Exit();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:44:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+ void ReadMouse(int button, int state, int x, int y);
+      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:167:12: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
+void Game::ReadMouse(int button, int state, int x, int y)
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:44:7: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
+ void ReadMouse(int button, int state, int x, int y);
+      ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:47:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+    void Reshape(int width, int height);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:190:12: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
+void Game::Reshape(int width, int height) {
+           ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:47:10: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
+    void Reshape(int width, int height);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:11:5: [31mstyle:[39m Class 'OverScreen' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+    OverScreen(const std::string& level_name);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:13:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:14:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:16:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+    virtual void Init();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:16:10: [2mnote:[0m Function in derived class
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:17:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:17:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:18:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:18:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+    virtual void Init();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:14:10: [2mnote:[0m Function in derived class
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:15:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:16:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+    virtual void Init();
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:14:10: [2mnote:[0m Function in derived class
+    void Init();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:15:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:16:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:11:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::width' can be const. [functionConst][0m
+    float width();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:66:18: [2mnote:[0m Technically the member function 'Animation::width' can be const.
+float Animation::width() {
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:11:11: [2mnote:[0m Technically the member function 'Animation::width' can be const.
+    float width();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:12:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::height' can be const. [functionConst][0m
+    float height();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:70:18: [2mnote:[0m Technically the member function 'Animation::height' can be const.
+float Animation::height() {
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:12:11: [2mnote:[0m Technically the member function 'Animation::height' can be const.
+    float height();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:20:15: [31m[35mstyle: inconclusive:[39m Member variable 'Effect::drawable_' is in the wrong place in the initializer list. [initializerList][0m
+    Drawable* drawable_;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.cpp:11:9: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
+        drawable_(0)
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:20:15: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
+    Drawable* drawable_;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:36:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        ((Entity*)drawable_)->NotifyCollisions();
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:10:36: [31m[35mstyle: inconclusive:[39m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'. [funcArgNamesDifferent][0m
+Bounce::Bounce(float height, float t) :
+                                   ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:12:32: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
+    Bounce(float height, float duration);
+                               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:10:36: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
+Bounce::Bounce(float height, float t) :
+                                   ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:22:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:22:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:24:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:24:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:25:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:25:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:20:40: [31mperformance:[39m Function parameter 'messages' should be passed by const reference. [passedByValue][0m
+    Dialog(const std::vector<Message*> messages, const CallbackEffect::Callback& callback);
+                                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:16:11: [31m[35mstyle: inconclusive:[39m Member variable 'Float::speed_' is in the wrong place in the initializer list. [initializerList][0m
+    float speed_;
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.cpp:10:9: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
+        speed_(-height / duration),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:16:11: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
+    float speed_;
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:17:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+    virtual bool IsFinished() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:17:10: [2mnote:[0m Function in derived class
+    bool IsFinished() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:19:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+    virtual void Tick(double delta) = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:19:10: [2mnote:[0m Function in derived class
+    void Tick(double delta);
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:20:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+    virtual void Render() const = 0;
+                 ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:20:10: [2mnote:[0m Function in derived class
+    void Render() const;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.cpp:21:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    float auxX = -((Entity*)this->drawable_)->position().x-((Entity*)this->drawable_)->width()/2;
+                   ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.cpp:22:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    float auxY = -((Entity*)this->drawable_)->position().y-((Entity*)this->drawable_)->height()/2;
+                   ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:26:10: [31mstyle:[39m The scope of the variable 'c' can be reduced. [variableScope][0m
+    char c;
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:24:49: [31m[35mstyle: inconclusive:[39m Function 'Render' argument 3 names different: declaration 'c' definition 'text'. [funcArgNamesDifferent][0m
+void Font::Render(float x, float y, const char* text) {
+                                                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.hpp:16:54: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
+    static void Render(float x, float y, const char* c);
+                                                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:24:49: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
+void Font::Render(float x, float y, const char* text) {
+                                                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.cpp:22:17: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+    Hitbox* h = (Hitbox*) rectangle;
+                ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/pixelmap.cpp:5:5: [31mperformance:[39m Variable 'map_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+    map_ = std::vector<std::vector<bool>>(height, std::vector<bool>(width, false));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/pixelmap.cpp:11:37: [31mstyle:[39m Clarify calculation precedence for '<<' and '?'. [clarifyCalculation][0m
+            std::cout << map_[i][j] ? '1' : '0';
+                                    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    hit_map_ = damage_map_ = new Pixelmap(width, height);
+               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    hit_map_ = damage_map_ = new Pixelmap(width, height);
+               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.hpp:11:9: [31m[35mstyle: inconclusive:[39m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list. [initializerList][0m
+    int idle_index;
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.cpp:12:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
+        idle_index(idle_index),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.hpp:11:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
+    int idle_index;
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/spritesheet.cpp:10:5: [31mperformance:[39m Variable 'texture_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+    texture_ = LoadTexture(path);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/main.cpp:59:8: [31mstyle:[39m Variable 'res_x' is assigned a value that is never used. [unreadVariable][0m
+ res_x = glutGet(GLUT_SCREEN_WIDTH);
+       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/main.cpp:60:8: [31mstyle:[39m Variable 'res_y' is assigned a value that is never used. [unreadVariable][0m
+ res_y = glutGet(GLUT_SCREEN_HEIGHT);
+       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:37:5: [31mperformance:[39m Variable 'nodes_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+    nodes_ = std::vector<std::vector<Path::Node*>>(map_->height_pixels / Path::RESOLUTION,
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    dynamic_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    dynamic_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:437:67: [31m[35mstyle: inconclusive:[39m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'. [funcArgNamesDifferent][0m
+void Level::Transition(const std::string& map, const std::string& place_) {
+                                                                  ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:40:64: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
+    void Transition(const std::string& map, const std::string& place);
+                                                               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:437:67: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
+void Level::Transition(const std::string& map, const std::string& place_) {
+                                                                  ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:289:51: [31mperformance:[39m Function parameter 'location' should be passed by const reference. [passedByValue][0m
+void Level::AddPlayer(Entity* player, std::string location) {
+                                                  ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:419:40: [31mstyle:[39m Parameter 'entity' can be declared with const [constParameter][0m
+void Level::RemovePendingPaths(Entity* entity) {
+                                       ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:185:13: [31mperformance:[39m Prefer prefix ++/-- operators for non-primitive types. [postfixOperator][0m
+            it++;
+            ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/location.cpp:41:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+        ((Mob*) entity)->set_facing(Dir::fromVector(vec2f(xdir, ydir)));
+         ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:40:11: [31m[35mstyle: inconclusive:[39m Member variable 'Path::rest' is in the wrong place in the initializer list. [initializerList][0m
+    float rest;
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:13:9: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
+        rest(0)
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:40:11: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
+    float rest;
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:11:15: [31m[35mstyle: inconclusive:[39m Member variable 'Node::parent' is in the wrong place in the initializer list. [initializerList][0m
+        Node* parent;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:46:9: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
+        parent(parent),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:11:15: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
+        Node* parent;
+              ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+        rectangle(new RectangleShape(0, 0, from->width(), from->height())),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+        rectangle(new RectangleShape(0, 0, from->width(), from->height())),
+        ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    static_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    static_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:9:30: [31m[35mstyle: inconclusive:[39m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'. [funcArgNamesDifferent][0m
+TileMap::TileMap(const char* name)
+                             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:12:22: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
+ TileMap(const char* s);
+                     ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:9:30: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
+TileMap::TileMap(const char* name)
+                             ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:12:9: [31m[35mstyle: inconclusive:[39m Member variable 'Tileset::frames' is in the wrong place in the initializer list. [initializerList][0m
     int frames;
         ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:8:9: note: Member variable 'Tileset::frames' is in the wrong place in the initializer list.
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.cpp:8:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
         frames(tileset->frames),
         ^
-/home/vuk/Desktop/Zelda/src/map/tileset.hpp:12:9: note: Member variable 'Tileset::frames' is in the wrong place in the initializer list.
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:12:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
     int frames;
         ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:47:23: warning: Expression 'tile_id' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversionCond]
-            int col = tile_id % tileset.width;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:13:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::x' can be const. [functionConst][0m
+    float x();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:45:23: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
+float RectangleShape::x() {
                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:50:24: note: Assuming that condition 'tile_id!=-1' is not redundant
-            if(tile_id != -1) {
-                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:47:23: note: Negative value is converted to an unsigned value
-            int col = tile_id % tileset.width;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:13:11: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
+    float x();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:14:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::y' can be const. [functionConst][0m
+    float y();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:49:23: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
+float RectangleShape::y() {
                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:48:23: warning: Expression 'tile_id' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversionCond]
-            int row = tile_id / tileset.width;
-                      ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:50:24: note: Assuming that condition 'tile_id!=-1' is not redundant
-            if(tile_id != -1) {
-                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:48:23: note: Negative value is converted to an unsigned value
-            int row = tile_id / tileset.width;
-                      ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:119:23: warning: Expression 'tile_id' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversionCond]
-            int col = tile_id % tileset.width;
-                      ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:122:24: note: Assuming that condition 'tile_id!=-1' is not redundant
-            if(tile_id != -1) {
-                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:119:23: note: Negative value is converted to an unsigned value
-            int col = tile_id % tileset.width;
-                      ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:120:23: warning: Expression 'tile_id' can have a negative value. That is converted to an unsigned value and used in an unsigned calculation. [signConversionCond]
-            int row = tile_id / tileset.width;
-                      ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:122:24: note: Assuming that condition 'tile_id!=-1' is not redundant
-            if(tile_id != -1) {
-                       ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:120:23: note: Negative value is converted to an unsigned value
-            int row = tile_id / tileset.width;
-                      ^
-64/106 files checked 60% done
-Checking /home/vuk/Desktop/Zelda/src/map/level.cpp ...
-65/106 files checked 61% done
-Checking /home/vuk/Desktop/Zelda/src/map/location.cpp ...
-66/106 files checked 62% done
-Checking /home/vuk/Desktop/Zelda/src/map/path.cpp ...
-67/106 files checked 63% done
-Checking /home/vuk/Desktop/Zelda/src/map/level_events.cpp ...
-68/106 files checked 64% done
-Checking /home/vuk/Desktop/Zelda/src/map/events/intro.cpp ...
-69/106 files checked 65% done
-Checking /home/vuk/Desktop/Zelda/src/map/events/dungeon_boss.cpp ...
-70/106 files checked 66% done
-Checking /home/vuk/Desktop/Zelda/src/math/dir.cpp ...
-Checking /home/vuk/Desktop/Zelda/src/math/dir.cpp: __cplusplus=201103L...
-71/106 files checked 66% done
-Checking /home/vuk/Desktop/Zelda/src/math/quadtree.cpp ...
-72/106 files checked 67% done
-Checking /home/vuk/Desktop/Zelda/src/math/rectangle.cpp ...
-73/106 files checked 68% done
-Checking /home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c ...
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:1003:15: style: The scope of the variable 'internal_texture_format' can be reduced. [variableScope]
- unsigned int internal_texture_format = 0, original_texture_format = 0;
-              ^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:1003:44: style: The scope of the variable 'original_texture_format' can be reduced. [variableScope]
- unsigned int internal_texture_format = 0, original_texture_format = 0;
-                                           ^
-74/106 files checked 69% done
-Checking /home/vuk/Desktop/Zelda/lib/soil/src/image_DXT.c ...
-/home/vuk/Desktop/Zelda/lib/soil/src/image_DXT.c:516:6: style: Variable 'swizzle4' can be declared with const [constVariable]
- int swizzle4[] = { 0, 2, 3, 1 };
-     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/image_DXT.c:590:6: style: Variable 'swizzle8' can be declared with const [constVariable]
- int swizzle8[] = { 1, 7, 6, 5, 4, 3, 2, 0 };
-     ^
-75/106 files checked 70% done
-Checking /home/vuk/Desktop/Zelda/lib/soil/src/image_helper.c ...
-/home/vuk/Desktop/Zelda/lib/soil/src/image_helper.c:348:9: style: The scope of the variable 'iv' can be reduced. [variableScope]
- int i, iv;
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:14:11: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
+    float y();
+          ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    level = new Level(name, hud);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    level = new Level(name, hud);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    over_ = new OverScreenPrivate::Over(level_name);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    over_ = new OverScreenPrivate::Over(level_name);
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:21:9: [31mstyle:[39m Class 'Over' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+        Over(const std::string& level_name) :
         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/image_helper.c:397:9: style: The scope of the variable 'iv' can be reduced. [variableScope]
- int i, iv;
-        ^
-76/106 files checked 71% done
-Checking /home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c ...
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1735:18: warning: Either the condition 'b<0xffff' is redundant or the array 'z->size[288]' is accessed at index 65534, which is out of bounds. [arrayIndexOutOfBoundsCond]
-      s = z->size[b];
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1734:10: note: Assuming that condition 'b<0xffff' is not redundant
-   if (b < 0xffff) {
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1735:18: note: Array index out of bounds
-      s = z->size[b];
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1738:22: warning: Either the condition 'b<0xffff' is redundant or the array 'z->value[288]' is accessed at index 65534, which is out of bounds. [arrayIndexOutOfBoundsCond]
-      return z->value[b];
-                     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1734:10: note: Assuming that condition 'b<0xffff' is not redundant
-   if (b < 0xffff) {
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1738:22: note: Array index out of bounds
-      return z->value[b];
-                     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2594:17: style: Redundant condition: If 'req_comp >= 3', the comparison 'req_comp' is always true. [redundantCondition]
-   if (req_comp && req_comp >= 3) // we can directly decode 3 or 4
-                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2650:11: style: Condition '!easy' is always true [knownConditionTrueFalse]
-      if (!easy) {
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2638:16: note: Assignment 'easy=0', assigned value is 0
-      int easy=0;
-               ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2650:11: note: Condition '!easy' is always true
-      if (!easy) {
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3154:21: style: Condition 'len>128' is always true [knownConditionTrueFalse]
-     } else if (len > 128) {
-                    ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3143:14: note: Assuming that condition 'len==128' is not redundant
-     if (len == 128) {
-             ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3154:21: note: Condition 'len>128' is always true
-     } else if (len > 128) {
-                    ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2651:33: error: Memory leak: out [memleak]
-         if (!mr || !mg || !mb) return epuc("bad masks", "Corrupt BMP");
-                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3272:6: style: Redundant initialization for 'c'. The initialized value is overwritten before it is read. [redundantInitialization]
-   c = get8(z);
-     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3270:9: note: c is initialized
- char c = '\0';
-        ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3272:6: note: c is overwritten
-   c = get8(z);
-     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:179:19: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (!f) return epuc("can't fopen", "Unable to open file");
-                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:212:11: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   return epuc("unknown image type", "Image not of any known type, or corrupt");
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:243:11: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   return epuc("unknown image type", "Image not of any known type, or corrupt");
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:253:19: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (!f) return epf("can't fopen", "Unable to open file");
-                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:269:11: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   return epf("unknown image type", "Image not of any known type, or corrupt");
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:283:11: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   return epf("unknown image type", "Image not of any known type, or corrupt");
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:481:14: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-      return epuc("outofmem", "Out of memory");
-             ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:519:45: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (output == NULL) { free(data); return epf("outofmem", "Out of memory"); }
-                                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:537:45: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (output == NULL) { free(data); return epuc("outofmem", "Out of memory"); }
-                                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1450:45: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (req_comp < 0 || req_comp > 4) return epuc("bad req_comp", "Internal error");
-                                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1479:65: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-         if (!z->img_comp[k].linebuf) { cleanup_jpeg(z); return epuc("outofmem", "Out of memory"); }
-                                                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1497:46: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-      if (!output) { cleanup_jpeg(z); return epuc("outofmem", "Out of memory"); }
-                                             ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2363:45: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (req_comp < 0 || req_comp > 4) return epuc("bad req_comp", "Internal error");
-                                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2518:49: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (get8(s) != 'B' || get8(s) != 'M') return epuc("not BMP", "Corrupt BMP");
-                                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2524:66: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (hsz != 12 && hsz != 40 && hsz != 56 && hsz != 108) return epuc("unknown BMP", "BMP type not supported: unknown");
-                                                                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2535:25: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (bpp == 1) return epuc("monochrome", "BMP type not supported: 1-bit");
-                        ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2543:50: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-      if (compress == 1 || compress == 2) return epuc("BMP RLE", "BMP type not supported: RLE");
-                                                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2599:21: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (!out) return epuc("outofmem", "Out of memory");
-                    ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2602:58: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-      if (psize == 0 || psize > 256) { free(out); return epuc("invalid", "Corrupt BMP"); }
-                                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2613:32: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-      else { free(out); return epuc("bad bpp", "Corrupt BMP"); }
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    title_ = new TitleScreenPrivate::Title();
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    title_ = new TitleScreenPrivate::Title();
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+    win_ = new WinScreenPrivate::Win();
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+    win_ = new WinScreenPrivate::Win();
+    ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.cpp:15:32: [31m[35mstyle: inconclusive:[39m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'. [funcArgNamesDifferent][0m
+GLuint LoadTexture(const char* file) {
                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2651:40: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-         if (!mr || !mg || !mb) return epuc("bad masks", "Corrupt BMP");
-                                       ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3056:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("not PSD", "Corrupt PSD image");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3060:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("wrong version", "Unsupported version of PSD image");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3068:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("wrong channel count", "Unsupported number of channels in PSD image");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3076:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("unsupported bit depth", "PSD bit depth is not 8 bit");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3089:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("wrong color format", "PSD is not in RGB color format");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3106:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("bad compression", "PSD has an unknown compression format");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3110:19: style: Same value in both branches of ternary operator. [duplicateValueTernary]
- if (!out) return epuc("outofmem", "Out of memory");
-                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3332:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epf("not HDR", "Corrupt HDR image");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3341:24: style: Same value in both branches of ternary operator. [duplicateValueTernary]
- if (!valid)    return epf("unsupported format", "Unsupported HDR format");
-                       ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3346:42: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (strncmp(token, "-Y ", 3))  return epf("unsupported data layout", "Unsupported HDR format");
-                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3350:42: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (strncmp(token, "+X ", 3))  return epf("unsupported data layout", "Unsupported HDR format");
-                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3395:69: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-         if (len != width) { free(hdr_data); free(scanline); return epf("invalid decoded scanline length", "corrupt HDR"); }
-                                                                    ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3439:10: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-  return epuc("not HDR", "Corrupt HDR image");
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3448:24: style: Same value in both branches of ternary operator. [duplicateValueTernary]
- if (!valid)    return epuc("unsupported format", "Unsupported HDR format");
-                       ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3453:42: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (strncmp(token, "-Y ", 3))  return epuc("unsupported data layout", "Unsupported HDR format");
-                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3457:42: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (strncmp(token, "+X ", 3))  return epuc("unsupported data layout", "Unsupported HDR format");
-                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3505:54: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-         if (len != width) { free(rgbe_data); return epuc("invalid decoded scanline length", "corrupt HDR"); }
-                                                     ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3550:19: style: Same value in both branches of ternary operator. [duplicateValueTernary]
-   if (!f) return epuc("can't fopen", "Unable to open file");
-                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1189:15: style: The scope of the variable 'q' can be reduced. [variableScope]
-   int Lf,p,i,q, h_max=1,v_max=1,c;
-              ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1353:10: style: The scope of the variable 't0' can be reduced. [variableScope]
-   int i,t0,t1;
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1918:15: style: The scope of the variable 'type' can be reduced. [variableScope]
-   int final, type;
-              ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2516:20: style: The scope of the variable 'compress' can be reduced. [variableScope]
-   int psize=0,i,j,compress=0,width;
-                   ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3050:25: style: The scope of the variable 'len' can be reduced. [variableScope]
- int channel, i, count, len;
-                        ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:273:10: style: The scope of the variable 'compressed' can be reduced. [variableScope]
- stbi_uc compressed[8];
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:763:18: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
-      return (-1 << n) + k + 1;
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1129:29: style: Local variable 'm' shadows outer argument [shadowArgument]
-            int sizes[16],i,m=0;
-                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1092:40: note: Shadowed declaration
-static int process_marker(jpeg *z, int m)
-                                       ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1129:29: note: Shadow variable
-            int sizes[16],i,m=0;
-                            ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1672:17: style: Local variable 'k' shadows outer variable [shadowVariable]
-            int k = bit_reverse(next_code[s],s);
-                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1641:10: note: Shadowed declaration
-   int i,k=0;
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1672:17: note: Shadow variable
-            int k = bit_reverse(next_code[s],s);
-                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1817:17: style: Variable 'length_dezigzag' can be declared with const [constVariable]
-   static uint8 length_dezigzag[19] = { 16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15 };
-                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2043:17: style: Variable 'png_sig' can be declared with const [constVariable]
-   static uint8 png_sig[8] = { 137,80,78,71,13,10,26,10 };
-                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3605:10: style: Variable 'bg' can be declared with const [constVariable]
-   uint8 bg[3] = { 255, 0, 255}, px[3];
-         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:639:43: style: Parameter 'count' can be declared with const [constParameter]
-static int build_huffman(huffman *h, int *count)
-                                          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1316:51: style: Parameter 'in_near' can be declared with const [constParameter]
-static uint8* resample_row_v_2(uint8 *out, uint8 *in_near, uint8 *in_far, int w, int hs)
-                                                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1316:67: style: Parameter 'in_far' can be declared with const [constParameter]
-static uint8* resample_row_v_2(uint8 *out, uint8 *in_near, uint8 *in_far, int w, int hs)
-                                                                  ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1350:52: style: Parameter 'in_near' can be declared with const [constParameter]
-static uint8 *resample_row_hv_2(uint8 *out, uint8 *in_near, uint8 *in_far, int w, int hs)
-                                                   ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1350:68: style: Parameter 'in_far' can be declared with const [constParameter]
-static uint8 *resample_row_hv_2(uint8 *out, uint8 *in_near, uint8 *in_far, int w, int hs)
-                                                                   ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1371:55: style: Parameter 'in_near' can be declared with const [constParameter]
-static uint8 *resample_row_generic(uint8 *out, uint8 *in_near, uint8 *in_far, int w, int hs)
-                                                      ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1385:49: style: Parameter 'y' can be declared with const [constParameter]
-static void YCbCr_to_RGB_row(uint8 *out, uint8 *y, uint8 *pcb, uint8 *pcr, int count, int step)
-                                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1385:59: style: Parameter 'pcb' can be declared with const [constParameter]
-static void YCbCr_to_RGB_row(uint8 *out, uint8 *y, uint8 *pcb, uint8 *pcr, int count, int step)
-                                                          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1385:71: style: Parameter 'pcr' can be declared with const [constParameter]
-static void YCbCr_to_RGB_row(uint8 *out, uint8 *y, uint8 *pcb, uint8 *pcr, int count, int step)
-                                                                      ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1639:47: style: Parameter 'sizelist' can be declared with const [constParameter]
-static int zbuild_huffman(zhuffman *z, uint8 *sizelist, int num)
-                                              ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2149:47: style: Parameter 'tc' can be declared with const [constParameter]
-static int compute_transparency(png *z, uint8 tc[3], int out_n)
-                                              ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2174:42: style: Parameter 'palette' can be declared with const [constParameter]
-static int expand_palette(png *a, uint8 *palette, int len, int pal_img_n)
-                                         ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3289:49: style: Parameter 'input' can be declared with const [constParameter]
-static void hdr_convert(float *output, stbi_uc *input, int req_comp)
-                                                ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:118:18: style: Parameter 'compressed' can be declared with const [constParameter]
-   unsigned char compressed[8] )
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:174:18: style: Parameter 'compressed' can be declared with const [constParameter]
-   unsigned char compressed[8] )
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:188:18: style: Parameter 'compressed' can be declared with const [constParameter]
-   unsigned char compressed[8] )
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:232:18: style: Parameter 'compressed' can be declared with const [constParameter]
-   unsigned char compressed[8] )
-                 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2516:28: style: Variable 'compress' is assigned a value that is never used. [unreadVariable]
-   int psize=0,i,j,compress=0,width;
-                           ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2985:20: style: Variable 'tga_palette_start' is assigned a value that is never used. [unreadVariable]
- tga_palette_start = tga_palette_len = tga_palette_bits =
-                   ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3186:11: style: Variable 'count' is assigned a value that is never used. [unreadVariable]
-    count = 0;
-          ^
-/home/vuk/Desktop/Zelda/lib/soil/src/stbi_DDS_aug_c.h:409:14: style: Variable 'DXT_family' is assigned a value that is never used. [unreadVariable]
-  DXT_family = 0;
-             ^
-77/106 files checked 72% done
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/tmx_map.cpp ...
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/tmx_map.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node < char >::m_last_node' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node < char >::m_last_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node < char >::m_prev_sibling' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: warning: Member variable 'xml_node < char >::m_next_sibling' is not initialized in the constructor. [uninitMemberVar]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:657:9: warning: Member variable 'xml_base < char >::m_name_size' is not initialized in the constructor. [uninitMemberVar]
-        xml_base()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:657:9: warning: Member variable 'xml_base < char >::m_value_size' is not initialized in the constructor. [uninitMemberVar]
-        xml_base()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:810:9: warning: Member variable 'xml_attribute < char >::m_prev_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_attribute()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:810:9: warning: Member variable 'xml_attribute < char >::m_next_attribute' is not initialized in the constructor. [uninitMemberVar]
-        xml_attribute()
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:1725:14: performance: inconclusive: Technically the member function 'xml_document < char >::parse_bom' can be static (but you may consider moving to unnamed namespace). [functionStatic]
-        void parse_bom(Ch *&text)
-             ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:28:9: style: Class 'file < char >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        file(const char *filename)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml_utils.hpp:51:9: style: Class 'file < char >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        file(std::basic_istream<Ch> &stream)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/rapidxml/rapidxml.hpp:901:9: style: Class 'xml_node < char >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
-        xml_node(node_type type)
-        ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/src/tmx_map.cpp:26:13: error: Memory leak: map [memleak]
-            throw ss.str();
-            ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/src/tmx_map.cpp:154:47: error: Uninitialized struct member: object.visible [uninitStructMember]
-                oGroup.objects[object.name] = object;
-                                              ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/src/tmx_map.cpp:154:47: error: Uninitialized variable: object.visible [uninitvar]
-                oGroup.objects[object.name] = object;
-                                              ^
-78/106 files checked 73% done
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/tsx_tileset.cpp ...
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/tsx_tileset.cpp: __cplusplus=201103L...
-79/106 files checked 74% done
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/xml_utils.cpp ...
-Checking /home/vuk/Desktop/Zelda/lib/TMXParser/src/xml_utils.cpp: __cplusplus=201103L...
-/home/vuk/Desktop/Zelda/lib/TMXParser/src/xml_utils.cpp:5:71: style: inconclusive: Function 'get_attribute' argument 2 names different: declaration 'attr' definition 'attr_name'. [funcArgNamesDifferent]
-    const char* get_attribute(rapidxml::xml_node<> *node, const char *attr_name, const char *default_value) {
-                                                                      ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/include/xml_utils.hpp:5:71: note: Function 'get_attribute' argument 2 names different: declaration 'attr' definition 'attr_name'.
-    const char* get_attribute(rapidxml::xml_node<> *node, const char *attr, const char *default_value);
-                                                                      ^
-/home/vuk/Desktop/Zelda/lib/TMXParser/src/xml_utils.cpp:5:71: note: Function 'get_attribute' argument 2 names different: declaration 'attr' definition 'attr_name'.
-    const char* get_attribute(rapidxml::xml_node<> *node, const char *attr_name, const char *default_value) {
-                                                                      ^
-80/106 files checked 75% done
-Checking lib/sfml-audio/dummy.cpp ...
-Checking lib/sfml-audio/dummy.cpp: SFML_EXPORTS=1;__cplusplus=201103L;__PIC__=1...
-81/106 files checked 76% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Clock.cpp ...
-82/106 files checked 77% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Err.cpp ...
-83/106 files checked 78% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Lock.cpp ...
-84/106 files checked 79% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Mutex.cpp ...
-85/106 files checked 80% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Sleep.cpp ...
-86/106 files checked 81% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/String.cpp ...
-87/106 files checked 82% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Thread.cpp ...
-88/106 files checked 83% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/ThreadLocal.cpp ...
-89/106 files checked 83% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Time.cpp ...
-90/106 files checked 84% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Unix/ClockImpl.cpp ...
-91/106 files checked 85% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Unix/MutexImpl.cpp ...
-92/106 files checked 86% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Unix/SleepImpl.cpp ...
-93/106 files checked 87% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Unix/ThreadImpl.cpp ...
-94/106 files checked 88% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/System/Unix/ThreadLocalImpl.cpp ...
-95/106 files checked 89% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/ALCheck.cpp ...
-96/106 files checked 90% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/AudioDevice.cpp ...
-97/106 files checked 91% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/Listener.cpp ...
-98/106 files checked 92% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/Music.cpp ...
-99/106 files checked 93% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/Sound.cpp ...
-100/106 files checked 94% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundBuffer.cpp ...
-101/106 files checked 95% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundBufferRecorder.cpp ...
-102/106 files checked 96% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundFile.cpp ...
-103/106 files checked 97% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundRecorder.cpp ...
-104/106 files checked 98% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundSource.cpp ...
-105/106 files checked 99% done
-Checking /home/vuk/Desktop/Zelda/lib/sfml-audio/src/SFML/Audio/SoundStream.cpp ...
-106/106 files checked 100% done
-/home/vuk/Desktop/Zelda/src/graphic/hitbox/animation_hitbox.cpp:17:0: style: The function 'CollisionType' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.hpp:4:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
+GLuint LoadTexture(const char* path);
+                               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.cpp:15:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
+GLuint LoadTexture(const char* file) {
+                               ^
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:48:0: [31mstyle:[39m The function 'Contrary' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/src/screen.cpp:6:0: style: The function 'Init' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:155:0: [31mstyle:[39m The function 'Finalize' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/src/graphic/drawable.cpp:16:0: style: The function 'IsEntity' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:251:0: [31mstyle:[39m The function 'KeyStatus' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/src/map/tileset.cpp:29:0: style: The function 'RenderTiles' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:199:0: [31mstyle:[39m The function 'MoveTowards' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/src/graphic/animation.cpp:25:0: style: The function 'Reset' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:17:0: [31mstyle:[39m The function 'current_frame' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:954:0: style: The function 'SOIL_create_OGL_texture' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:21:0: [31mstyle:[39m The function 'set_current_frame' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:169:0: style: The function 'SOIL_load_OGL_HDR_texture' is never used. [unusedFunction]
+[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:19:0: [31mstyle:[39m The function 'top_center' is never used. [unusedFunction][0m
 
 ^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:279:0: style: The function 'SOIL_load_OGL_cubemap' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:464:0: style: The function 'SOIL_load_OGL_cubemap_from_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:667:0: style: The function 'SOIL_load_OGL_single_cubemap' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:752:0: style: The function 'SOIL_load_OGL_single_cubemap_from_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:221:0: style: The function 'SOIL_load_OGL_texture_from_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/SOIL.c:1375:0: style: The function 'SOIL_save_screenshot' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/image_helper.c:260:0: style: The function 'convert_YCoCg_to_RGB' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/src/graphic/animation.cpp:17:0: style: The function 'current_frame' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/src/math/dir.cpp:9:0: style: The function 'fromVector' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/src/graphic/animation.cpp:21:0: style: The function 'set_current_frame' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/src/graphic/spritesheet.cpp:42:0: style: The function 'set_hit_spritesheet' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2706:0: style: The function 'stbi_bmp_load' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3564:0: style: The function 'stbi_hdr_load_rgbe_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:334:0: style: The function 'stbi_hdr_to_ldr_gamma' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:335:0: style: The function 'stbi_hdr_to_ldr_scale' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:142:0: style: The function 'stbi_image_free' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:301:0: style: The function 'stbi_is_hdr' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:291:0: style: The function 'stbi_is_hdr_from_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1554:0: style: The function 'stbi_jpeg_load' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:337:0: style: The function 'stbi_ldr_to_hdr_gamma' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:338:0: style: The function 'stbi_ldr_to_hdr_scale' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:249:0: style: The function 'stbi_loadf' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:273:0: style: The function 'stbi_loadf_from_memory' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2391:0: style: The function 'stbi_png_load' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:3206:0: style: The function 'stbi_psd_load' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:151:0: style: The function 'stbi_register_loader' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2992:0: style: The function 'stbi_tga_load' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1976:0: style: The function 'stbi_zlib_decode_buffer' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:2003:0: style: The function 'stbi_zlib_decode_noheader_buffer' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/lib/soil/src/stb_image_aug.c:1987:0: style: The function 'stbi_zlib_decode_noheader_malloc' is never used. [unusedFunction]
-
-^
-/home/vuk/Desktop/Zelda/src/graphic/spritesheet.cpp:46:0: style: The function 'texture' is never used. [unusedFunction]
-
-^
-nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
-
