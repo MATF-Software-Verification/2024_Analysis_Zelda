@@ -14,7 +14,7 @@ if [ ! -f "$BUILD_DIR/compile_commands.json" ]; then
     exit 1
 fi
 
-echo "Pokrećetanje clang-tidy analize..."
+echo "Pokretanje clang-tidy analize..."
 run-clang-tidy -checks='clang-diagnostic-*,clang-analyzer-*,modernize-use-auto,modernize-use-nullptr,modernize-use-noexcept,modernize-use-emplace,modernize-use-emplace-back,modernize-loop-convert,modernize-use-using' -p "$BUILD_DIR" "$SRC_DIR" > clang-tidy-report.txt 2>&1
 
 if [ -f clang-tidy-report.txt ]; then
