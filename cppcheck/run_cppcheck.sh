@@ -7,7 +7,7 @@ if ! command -v cppcheck &> /dev/null; then
 fi
 
 
-PROJECT_PATH="${1:-$(pwd)}"
+PROJECT_PATH="../zelda/src"
 OUTPUT_TXT="cpp_check_res.txt"  
 
 

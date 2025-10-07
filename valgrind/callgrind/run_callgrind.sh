@@ -1,43 +1,25 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-# Definisanje direktorijuma gde se nalazi izvršni fajl
-src_dir="/home/vuk/Desktop/Zelda/cmake-build-debug"
+DIR="$(cd "$(dirname "$0")" && pwd)"
+WORK_DIR="$DIR/../../zelda"
+EXE="$WORK_DIR/cmake-build-debug/zelda"
 
-# Generisanje jedinstvenog PID-a za izlazne fajlove
 pid=$$
+CALL_OUT="$DIR/callgrind_output_$pid.out"
+ANNOT_OUT="$DIR/callgrind_annotate_$pid.txt"
 
-# Nazivi izlaznih fajlova
-callgrind_output_file="callgrind_output_$pid.out"
-callgrind_annotate_output_file="callgrind_annotate_output_$pid.txt"
+[[ -x "$EXE" ]] || { echo "Nema izvršnog fajla: $EXE"; exit 1; }
 
-# Pokrećetanje Valgrind Callgrinda na izvršnoj datoteci
-valgrind --tool=callgrind --callgrind-out-file="$callgrind_output_file" "$src_dir/Zelda"
+(
+  cd "$WORK_DIR" || exit 1
+  valgrind --tool=callgrind --callgrind-out-file="$CALL_OUT" "$EXE"
+)
 
+[[ -f "$CALL_OUT" ]] || { echo "Callgrind izlaz nije kreiran"; exit 1; }
+callgrind_annotate --auto=yes "$CALL_OUT" > "$ANNOT_OUT"
+echo "Izlaz: $CALL_OUT"
+echo "Annotate: $ANNOT_OUT"
 
-if [ -f "$callgrind_output_file" ]; then
-    echo "Kreiran Callgrind izlaz: $callgrind_output_file"
-else
-    echo "Greška: Callgrind izlaz nije kreiran!"
-    exit 1
-fi
+if command -v kcachegrind >/dev/null; then kcachegrind "$CALL_OUT" & fi
 
-# Analiziranje Callgrinda izlaza i čuvanje annotate fajla
-callgrind_annotate --auto=yes "$callgrind_output_file" > "$callgrind_annotate_output_file"
-
-# Provera da li je annotate fajl uspešno kreiran
-if [ -f "$callgrind_annotate_output_file" ]; then
-    echo "Kreiran Callgrind annotate izlaz: $callgrind_annotate_output_file"
-else
-    echo "Greška: Annotate izlaz nije kreiran!"
-    exit 1
-fi
-
-# Pokretanje
-if command -v kcachegrind &> /dev/null; then
-    echo "Pokretanje kcachegrinda..."
-    kcachegrind "$callgrind_output_file" &
-else
-    echo " kcachegrind nije instaliran. Instaliranje pomocu komande: sudo apt install kcachegrind"
-fi
-
-echo "Analiza završena."

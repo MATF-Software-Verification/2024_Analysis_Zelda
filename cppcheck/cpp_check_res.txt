@@ -1,1653 +1,1653 @@
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:8:6: [31m[35mwarning: inconclusive:[39m Class 'Drawable' which has virtual members does not have a virtual destructor. [virtualDestructor][0m
+[1m../zelda/src/graphic/drawable.hpp:8:6: [31m[35mwarning: inconclusive:[39m Class 'Drawable' which has virtual members does not have a virtual destructor. [virtualDestructor][0m
     ~Drawable();
      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:7:5: [31mstyle:[39m Class 'Animation' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/graphic/animation.hpp:7:5: [31mstyle:[39m Class 'Animation' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Animation(SpriteSet* spriteset);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:16:5: [31mstyle:[39m Class 'Tileset' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/map/tileset.hpp:16:5: [31mstyle:[39m Class 'Tileset' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Tileset(TSX::Tileset* tileset);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:12:2: [31mstyle:[39m Class 'TileMap' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/map/tile_map.hpp:12:2: [31mstyle:[39m Class 'TileMap' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
  TileMap(const char* s);
  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:7:5: [31mstyle:[39m Class 'AI' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai.hpp:7:5: [31mstyle:[39m Class 'AI' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     AI(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/hud.hpp:12:5: [31mstyle:[39m Class 'Hud' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/hud.hpp:12:5: [31mstyle:[39m Class 'Hud' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Hud(Link* player);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:33:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/math/rectangle.hpp:33:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:33:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/math/rectangle.hpp:33:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:34:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/math/rectangle.hpp:34:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:34:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/math/rectangle.hpp:34:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:11:10: [31mstyle:[39m The function 'IsHitbox' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/hitbox.hpp:11:10: [31mstyle:[39m The function 'IsHitbox' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsHitbox() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:10:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:10:18: [2mnote:[0m Virtual function in base class
     virtual bool IsHitbox() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:11:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/hitbox.hpp:11:10: [2mnote:[0m Function in derived class
     bool IsHitbox() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:23:10: [31mstyle:[39m The function 'IsEntity' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity.hpp:23:10: [31mstyle:[39m The function 'IsEntity' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsEntity() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsEntity() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:23:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity.hpp:23:10: [2mnote:[0m Function in derived class
     bool IsEntity() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:30:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity.hpp:30:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite() const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:30:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity.hpp:30:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:31:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity.hpp:31:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:31:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity.hpp:31:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:25:10: [31mstyle:[39m The function 'moving' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:25:10: [31mstyle:[39m The function 'moving' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool moving() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:25:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:25:18: [2mnote:[0m Virtual function in base class
     virtual bool moving() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:25:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:25:10: [2mnote:[0m Function in derived class
     bool moving() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:26:10: [31mstyle:[39m The function 'IsMob' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:26:10: [31mstyle:[39m The function 'IsMob' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsMob() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:26:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:26:18: [2mnote:[0m Virtual function in base class
     virtual bool IsMob() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:26:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:26:10: [2mnote:[0m Function in derived class
     bool IsMob() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:28:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:28:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:28:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:28:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:29:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:29:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite() const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:29:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:29:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:34:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:34:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:34:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:34:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:48:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:48:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Damage(Entity* from, int damage);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
     virtual void Damage(Entity* from, int damage);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:48:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:48:10: [2mnote:[0m Function in derived class
     void Damage(Entity* from, int damage);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:50:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:50:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:50:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:50:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:51:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob.hpp:51:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:51:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob.hpp:51:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:37:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link.hpp:37:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Damage(Entity* from, int amount);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
     virtual void Damage(Entity* from, int damage);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:37:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link.hpp:37:10: [2mnote:[0m Function in derived class
     void Damage(Entity* from, int amount);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:39:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link.hpp:39:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
     virtual bool CollidesWith(RectangleShape const * rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:39:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link.hpp:39:10: [2mnote:[0m Function in derived class
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:40:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link.hpp:40:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:40:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link.hpp:40:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:42:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link.hpp:42:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape*rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:42:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link.hpp:42:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape*rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:44:10: [31mstyle:[39m The function 'Die' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link.hpp:44:10: [31mstyle:[39m The function 'Die' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Die();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:37:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:37:18: [2mnote:[0m Virtual function in base class
     virtual void Die();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.hpp:44:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link.hpp:44:10: [2mnote:[0m Function in derived class
     void Die();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:37:10: [31mstyle:[39m The function 'CollidablesFor' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/map/level.hpp:37:10: [31mstyle:[39m The function 'CollidablesFor' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/map/tile_map.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:37:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/map/level.hpp:37:10: [2mnote:[0m Function in derived class
     void CollidablesFor(RectangleShape* rectangle, std::vector<RectangleShape*>& collidables) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:43:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/map/level.hpp:43:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:43:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/map/level.hpp:43:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:44:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/map/level.hpp:44:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:44:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/map/level.hpp:44:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/vec2.hpp:31:28: [31mstyle:[39m Parameter 'v' can be declared with const [constParameter][0m
+[1m../zelda/src/math/vec2.hpp:31:28: [31mstyle:[39m Parameter 'v' can be declared with const [constParameter][0m
     vec2& operator-=(vec2& v) {
                            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:7:9: [31mwarning:[39m Member variable 'Entity::level_' is not initialized in the constructor. [uninitMemberVar][0m
+[1m../zelda/src/entity.cpp:7:9: [31mwarning:[39m Member variable 'Entity::level_' is not initialized in the constructor. [uninitMemberVar][0m
 Entity::Entity(float x, float y, float width, float height) :
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:50:10: [31m[35mstyle: inconclusive:[39m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity.hpp:50:10: [31m[35mstyle: inconclusive:[39m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list. [initializerList][0m
     bool is_vulnerable_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:14:9: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity.cpp:14:9: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
         is_vulnerable_(true)
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:50:10: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity.hpp:50:10: [2mnote:[0m Member variable 'Entity::is_vulnerable_' is in the wrong place in the initializer list.
     bool is_vulnerable_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:13:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object.hpp:13:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite(vec2f& sprite_position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:13:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object.hpp:13:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite(vec2f& sprite_position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:14:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object.hpp:14:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite() const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:14:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object.hpp:14:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object.hpp:16:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:10:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/item.hpp:10:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/item.hpp:10:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:12:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/item.hpp:12:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Damage(Entity* from, int damage);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
     virtual void Damage(Entity* from, int damage);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/item.hpp:12:10: [2mnote:[0m Function in derived class
     void Damage(Entity* from, int damage);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:13:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/item.hpp:13:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
     virtual void Dead();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/item.hpp:13:10: [2mnote:[0m Function in derived class
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.hpp:22:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/item/rupee.hpp:22:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.hpp:22:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/item/rupee.hpp:22:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:91:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity.cpp:91:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         if(collidable->IsEntity() && ((Entity*)collidable)->IsMob()) {
                                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.cpp:92:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity.cpp:92:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             Mob* mob = (Mob*)collidable;
                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:21:10: [31m[35mstyle: inconclusive:[39m Member variable 'Door::opened_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity/door.hpp:21:10: [31m[35mstyle: inconclusive:[39m Member variable 'Door::opened_' is in the wrong place in the initializer list. [initializerList][0m
     bool opened_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:16:9: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/door.cpp:16:9: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
         opened_(false)
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:21:10: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/door.hpp:21:10: [2mnote:[0m Member variable 'Door::opened_' is in the wrong place in the initializer list.
     bool opened_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:19:5: [31mperformance:[39m Variable 'tiles_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+[1m../zelda/src/entity/door.cpp:19:5: [31mperformance:[39m Variable 'tiles_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
     tiles_ = std::vector<std::vector<int>>(2, std::vector<int>(2));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     open_effect_ = new Overlay(0.1, position_.x, position_.y, tileset, animation_overlay, [this]{
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/entity/door.cpp:36:5: [31mwarning:[39m Class 'Door' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     open_effect_ = new Overlay(0.1, position_.x, position_.y, tileset, animation_overlay, [this]{
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:11:5: [31mstyle:[39m Class 'CallbackEffect' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/graphic/callback_effect.hpp:11:5: [31mstyle:[39m Class 'CallbackEffect' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     CallbackEffect(const std::function<void()>& callback);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/door.hpp:16:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/door.hpp:16:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:18:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/door.hpp:18:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
     virtual void Dead();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door.hpp:18:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/door.hpp:18:10: [2mnote:[0m Function in derived class
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:14:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/callback_effect.hpp:14:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
     virtual void Leave();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/callback_effect.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/callback_effect.hpp:14:10: [2mnote:[0m Function in derived class
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/overlay.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/overlay.hpp:13:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/overlay.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:15:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/overlay.hpp:15:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/overlay.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/overlay.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/overlay.hpp:16:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/door/boss_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/door/boss_door.hpp:10:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/boss_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/door/boss_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         Link* player = (Link*) mob;
                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/door/key_door.hpp:10:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/door/key_door.hpp:10:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/door/key_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/door/key_door.cpp:11:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         Link* player = (Link*) mob;
                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.hpp:12:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/event.hpp:12:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/event.hpp:12:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event.cpp:9:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/event.cpp:9:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return rectangle->IsEntity() && ((Entity*)rectangle)->type() == PLAYER;
                                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event/map_transition.hpp:11:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/event/map_transition.hpp:11:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/event/map_transition.hpp:11:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/event/map_transition.hpp:11:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:10:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/float.hpp:10:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/float.hpp:10:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:12:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/float.hpp:12:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/float.hpp:12:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:13:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/float.hpp:13:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/float.hpp:13:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.cpp:13:58: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/item.cpp:13:58: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return !current_effect_ && rectangle->IsEntity() && ((Entity*) rectangle)->type() == PLAYER;
                                                          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item.cpp:18:29: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/item.cpp:18:29: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         HandleCollisionWith((Mob*)from);
                             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.hpp:21:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/item/key.hpp:21:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.hpp:21:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/item/key.hpp:21:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/bounce.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/bounce.hpp:14:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/bounce.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/bounce.hpp:16:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/bounce.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/bounce.hpp:17:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:18:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/bounce.hpp:18:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:16:18: [2mnote:[0m Virtual function in base class
     virtual void Leave();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:18:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/bounce.hpp:18:10: [2mnote:[0m Function in derived class
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.cpp:31:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/item/key.cpp:31:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         ((Link*)mob)->AddSmallKey(name_);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/key.cpp:33:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/item/key.cpp:33:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         ((Link*)mob)->AddBossKey(name_);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/item/rupee.cpp:47:6: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/item/rupee.cpp:47:6: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     ((Link*) mob)->UpdateRupees(amount);
      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:6: [31mwarning:[39m Member variable 'Mob::ai_' is not initialized in the constructor. [uninitMemberVar][0m
+[1m../zelda/src/entity/mob.cpp:15:6: [31mwarning:[39m Member variable 'Mob::ai_' is not initialized in the constructor. [uninitMemberVar][0m
 Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:54:13: [31m[35mstyle: inconclusive:[39m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity/mob.hpp:54:13: [31m[35mstyle: inconclusive:[39m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list. [initializerList][0m
     Action* idle_action_;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:20:9: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob.cpp:20:9: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
         idle_action_(idle_action),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:54:13: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob.hpp:54:13: [2mnote:[0m Member variable 'Mob::idle_action_' is in the wrong place in the initializer list.
     Action* idle_action_;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:11:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/move.hpp:11:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsBlocking() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual bool IsBlocking() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:11:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/move.hpp:11:10: [2mnote:[0m Function in derived class
     bool IsBlocking() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:12:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/move.hpp:12:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/move.hpp:12:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/move.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/move.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/move.hpp:13:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:12:10: [31mstyle:[39m The function 'IsTemporary' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/push.hpp:12:10: [31mstyle:[39m The function 'IsTemporary' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsTemporary() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:16:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:16:18: [2mnote:[0m Virtual function in base class
     virtual bool IsTemporary() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/push.hpp:12:10: [2mnote:[0m Function in derived class
     bool IsTemporary() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:13:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/push.hpp:13:10: [31mstyle:[39m The function 'IsBlocking' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsBlocking() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual bool IsBlocking() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/push.hpp:13:10: [2mnote:[0m Function in derived class
     bool IsBlocking() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/push.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:15:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/push.hpp:14:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:16:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/push.hpp:16:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/push.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/push.hpp:16:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:130:42: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob.cpp:130:42: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             if(candidate->IsEntity() && ((Entity*) candidate)->IsVulnerable()) {
                                          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:135:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob.cpp:135:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
                     ((Entity*) candidate)->Damage(this, 1);
                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:234:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob.cpp:234:30: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             Entity* entity = (Entity*) candidate;
                              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:322:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob.cpp:322:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return !rectangle->IsEntity() || ((Entity*)rectangle)->type() != type_;
                                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:173:11: [31mstyle:[39m The scope of the variable 'dist' can be reduced. [variableScope][0m
+[1m../zelda/src/entity/mob.cpp:173:11: [31mstyle:[39m The scope of the variable 'dist' can be reduced. [variableScope][0m
     float dist;
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:63: [31m[35mstyle: inconclusive:[39m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'. [funcArgNamesDifferent][0m
+[1m../zelda/src/entity/mob.cpp:15:63: [31m[35mstyle: inconclusive:[39m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'. [funcArgNamesDifferent][0m
 Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
                                                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.hpp:20:62: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
+[1m../zelda/src/entity/mob.hpp:20:62: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
     Mob(float x, float y, float width, float height, Action* idle_action_);
                                                              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:15:63: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
+[1m../zelda/src/entity/mob.cpp:15:63: [2mnote:[0m Function 'Mob' argument 5 names different: declaration 'idle_action_' definition 'idle_action'.
 Mob::Mob(float x, float y, float width, float height, Action* idle_action) :
                                                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:111:33: [31mperformance:[39m Function parameter 'name' should be passed by const reference. [passedByValue][0m
+[1m../zelda/src/entity/mob.cpp:111:33: [31mperformance:[39m Function parameter 'name' should be passed by const reference. [passedByValue][0m
 Action* Mob::action(std::string name) const {
                                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.cpp:9:21: [31mstyle:[39m Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm][0m
+[1m../zelda/src/entity/mob/action.cpp:9:21: [31mstyle:[39m Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm][0m
         animations_.push_back(new Animation(spriteset));
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.cpp:5:9: [31mwarning:[39m Member variable 'Attack::hitbox_' is not initialized in the constructor. [uninitMemberVar][0m
+[1m../zelda/src/entity/mob/action/attack.cpp:5:9: [31mwarning:[39m Member variable 'Attack::hitbox_' is not initialized in the constructor. [uninitMemberVar][0m
 Attack::Attack(Mob* mob, const std::vector<SpriteSet*>& animations) : super(mob, animations) {
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite(vec2f& sprite_position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:11:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite(vec2f& sprite_position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite() const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:12:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [31mstyle:[39m The function 'CollisionType' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [31mstyle:[39m The function 'CollisionType' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Collision CollisionType(RectangleShape* rectangle) const;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:28:23: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:28:23: [2mnote:[0m Virtual function in base class
     virtual Collision CollisionType(RectangleShape* rectangle) const;
                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/hitbox/animation_hitbox.hpp:13:15: [2mnote:[0m Function in derived class
     Collision CollisionType(RectangleShape* rectangle) const;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:11:10: [31mstyle:[39m The function 'Enter' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/attack.hpp:11:10: [31mstyle:[39m The function 'Enter' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Enter();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:19:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:19:18: [2mnote:[0m Virtual function in base class
     virtual void Enter();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:11:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/attack.hpp:11:10: [2mnote:[0m Function in derived class
     void Enter();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/attack.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:21:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/attack.hpp:12:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:13:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/action/attack.hpp:13:10: [31mstyle:[39m The function 'Leave' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action.hpp:20:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/action.hpp:20:18: [2mnote:[0m Virtual function in base class
     virtual void Leave();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/action/attack.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/action/attack.hpp:13:10: [2mnote:[0m Function in derived class
     void Leave();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:20:12: [31m[35mstyle: inconclusive:[39m Member variable 'Chase::wander_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:20:12: [31m[35mstyle: inconclusive:[39m Member variable 'Chase::wander_' is in the wrong place in the initializer list. [initializerList][0m
     Wander wander_;
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:7:9: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/ai/chase.cpp:7:9: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
         wander_(mob),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:20:12: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/ai/chase.hpp:20:12: [2mnote:[0m Member variable 'Chase::wander_' is in the wrong place in the initializer list.
     Wander wander_;
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Detected' can be const. [functionConst][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Detected' can be const. [functionConst][0m
     bool Detected(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:14:13: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
+[1m../zelda/src/entity/mob/ai/chase.cpp:14:13: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
 bool Chase::Detected(Entity* destiny_entity){
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:14:10: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
+[1m../zelda/src/entity/mob/ai/chase.hpp:14:10: [2mnote:[0m Technically the member function 'Chase::Detected' can be const.
     bool Detected(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Lost' can be const. [functionConst][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'Chase::Lost' can be const. [functionConst][0m
     bool Lost(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:33:13: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
+[1m../zelda/src/entity/mob/ai/chase.cpp:33:13: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
 bool Chase::Lost(Entity* destiny_entity){
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:15:10: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
+[1m../zelda/src/entity/mob/ai/chase.hpp:15:10: [2mnote:[0m Technically the member function 'Chase::Lost' can be const.
     bool Lost(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:16:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:16:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
     Dir Evade(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:51:12: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase.cpp:51:12: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
 Dir Chase::Evade(Dir aux){
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:16:9: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase.hpp:16:9: [2mnote:[0m Technically the member function 'Chase::Evade' can be static (but you may consider moving to unnamed namespace).
     Dir Evade(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:10:5: [31mstyle:[39m Class 'Wander' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai/wander.hpp:10:5: [31mstyle:[39m Class 'Wander' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Wander(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:10:5: [31mstyle:[39m Class 'Chase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:10:5: [31mstyle:[39m Class 'Chase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Chase(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/wander.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/wander.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/wander.hpp:12:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/chase.hpp:12:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/chase.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Debug() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/chase.hpp:13:10: [2mnote:[0m Function in derived class
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:81:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
+[1m../zelda/src/entity/mob/ai/chase.cpp:81:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
                 direction_ = (dying)?((diffX>0)?Dir::RIGHT:Dir::LEFT):((diffX>0)?Dir::LEFT:Dir::RIGHT);
                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:80:17: [2mnote:[0m Assuming that condition '!dying' is not redundant
+[1m../zelda/src/entity/mob/ai/chase.cpp:80:17: [2mnote:[0m Assuming that condition '!dying' is not redundant
             if (!dying && diffYaux < mob_->height())
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:81:31: [2mnote:[0m Condition 'dying' is always false
+[1m../zelda/src/entity/mob/ai/chase.cpp:81:31: [2mnote:[0m Condition 'dying' is always false
                 direction_ = (dying)?((diffX>0)?Dir::RIGHT:Dir::LEFT):((diffX>0)?Dir::LEFT:Dir::RIGHT);
                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:83:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
+[1m../zelda/src/entity/mob/ai/chase.cpp:83:31: [31mstyle:[39m Condition 'dying' is always false [knownConditionTrueFalse][0m
                 direction_ = (dying)?((diffX>0)?Dir::LEFT:Dir::RIGHT):((diffY>0)?Dir::UP:Dir::DOWN);
                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:82:22: [2mnote:[0m Assuming that condition '!dying' is not redundant
+[1m../zelda/src/entity/mob/ai/chase.cpp:82:22: [2mnote:[0m Assuming that condition '!dying' is not redundant
             else if (!dying && diffXaux < mob_->width())
                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:83:31: [2mnote:[0m Condition 'dying' is always false
+[1m../zelda/src/entity/mob/ai/chase.cpp:83:31: [2mnote:[0m Condition 'dying' is always false
                 direction_ = (dying)?((diffX>0)?Dir::LEFT:Dir::RIGHT):((diffY>0)?Dir::UP:Dir::DOWN);
                               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:20:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+[1m../zelda/src/entity/mob/ai/chase.cpp:20:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
     const Dir aux = mob_->facing();
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase.cpp:37:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+[1m../zelda/src/entity/mob/ai/chase.cpp:37:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
     const Dir aux = mob_->facing();
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [31m[35mstyle: inconclusive:[39m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [31m[35mstyle: inconclusive:[39m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list. [initializerList][0m
     Wander wander_;
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:6:9: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:6:9: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
         wander_(mob),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:22:12: [2mnote:[0m Member variable 'ChaseEvade::wander_' is in the wrong place in the initializer list.
     Wander wander_;
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Detected' can be const. [functionConst][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Detected' can be const. [functionConst][0m
     bool Detected(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:12:18: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:12:18: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
 bool ChaseEvade::Detected(Entity* destiny_entity){
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:14:10: [2mnote:[0m Technically the member function 'ChaseEvade::Detected' can be const.
     bool Detected(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Lost' can be const. [functionConst][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [31m[35mstyle: inconclusive:[39m Technically the member function 'ChaseEvade::Lost' can be const. [functionConst][0m
     bool Lost(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:31:18: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:31:18: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
 bool ChaseEvade::Lost(Entity* destiny_entity){
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:15:10: [2mnote:[0m Technically the member function 'ChaseEvade::Lost' can be const.
     bool Lost(Entity* destiny_entity);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
     Dir Contrary(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:48:17: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:48:17: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
 Dir ChaseEvade::Contrary(Dir aux){
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:17:9: [2mnote:[0m Technically the member function 'ChaseEvade::Contrary' can be static (but you may consider moving to unnamed namespace).
     Dir Contrary(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [31m[35mperformance: inconclusive:[39m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
     Dir Evade(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:58:17: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:58:17: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
 Dir ChaseEvade::Evade(Dir aux){
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:19:9: [2mnote:[0m Technically the member function 'ChaseEvade::Evade' can be static (but you may consider moving to unnamed namespace).
     Dir Evade(Dir aux);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:10:5: [31mstyle:[39m Class 'ChaseEvade' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:10:5: [31mstyle:[39m Class 'ChaseEvade' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     ChaseEvade(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:12:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Debug() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/chase_evade.hpp:13:10: [2mnote:[0m Function in derived class
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:18:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:18:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
     const Dir aux = mob_->facing();
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:35:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:35:15: [31m[35mperformance: inconclusive:[39m Use const reference for 'aux' to avoid unnecessary data copying. [redundantCopyLocalConst][0m
     const Dir aux = mob_->facing();
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:11:5: [31mstyle:[39m Class 'Follower' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai/follower.hpp:11:5: [31mstyle:[39m Class 'Follower' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     Follower(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/follower.hpp:13:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/follower.hpp:13:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:14:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/follower.hpp:14:10: [31mstyle:[39m The function 'Debug' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Debug() const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/follower.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/follower.hpp:14:10: [2mnote:[0m Function in derived class
     void Debug() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/player.hpp:9:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/player.hpp:9:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/player.hpp:9:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/player.hpp:9:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:8:5: [31mstyle:[39m Class 'RotationChase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/ai/rotation_chase.hpp:8:5: [31mstyle:[39m Class 'RotationChase' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     RotationChase(Mob* mob);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:28:9: [31mstyle:[39m Class 'MoldormHitbox' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:28:9: [31mstyle:[39m Class 'MoldormHitbox' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
         MoldormHitbox(Moldorm* moldorm);
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity/mob/ai.hpp:12:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/ai/rotation_chase.hpp:10:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:57:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:57:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:57:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:57:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:58:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:58:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
     virtual bool CollidesWith(RectangleShape const * rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:58:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:58:10: [2mnote:[0m Function in derived class
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:59:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:59:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:59:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:59:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:66:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:66:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:66:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:66:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:67:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:67:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:67:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:67:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:69:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:69:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
     virtual void Dead();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:69:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/moldorm.hpp:69:10: [2mnote:[0m Function in derived class
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/rotation_chase.cpp:9:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/ai/rotation_chase.cpp:9:24: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     Moldorm* moldorm = (Moldorm*) mob_;
                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/guard.hpp:17:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/guard.hpp:17:10: [31mstyle:[39m The function 'Update' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:17:18: [2mnote:[0m Virtual function in base class
     virtual void Update(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/guard.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/guard.hpp:17:10: [2mnote:[0m Function in derived class
     void Update(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:13:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:13:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:15:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:15:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/rotation_fade.hpp:16:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:11:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/timer.hpp:11:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:11:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/timer.hpp:11:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/timer.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/timer.hpp:13:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/timer.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/timer.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/timer.hpp:14:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:9:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/blink.hpp:9:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:9:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/blink.hpp:9:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:10:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/blink.hpp:10:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/blink.hpp:10:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/blink.hpp:10:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/fade.hpp:14:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/fade.hpp:14:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/fade.hpp:16:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/fade.hpp:16:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/fade.hpp:17:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/fade.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/fade.hpp:17:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:87:15: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/link.cpp:87:15: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             (((Entity*)rectangle)->type() != ENEMY && ((Entity*)rectangle)->type() != BOSS) ||
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:89:18: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/link.cpp:89:18: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
                 ((Entity*)rectangle)->type() != BOSS ||
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link.cpp:137:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/link.cpp:137:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             ((Entity*) rectangle)->type() != FOLLOWER
              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:24:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link_follower.hpp:24:10: [31mstyle:[39m The function 'CollidesWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:25:18: [2mnote:[0m Virtual function in base class
     virtual bool CollidesWith(RectangleShape const * rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:24:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link_follower.hpp:24:10: [2mnote:[0m Function in derived class
     bool CollidesWith(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:25:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link_follower.hpp:25:10: [31mstyle:[39m The function 'HandleCollisionWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:27:18: [2mnote:[0m Virtual function in base class
     virtual bool HandleCollisionWith(Mob* mob);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:25:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link_follower.hpp:25:10: [2mnote:[0m Function in derived class
     bool HandleCollisionWith(Mob* mob);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:27:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/link_follower.hpp:27:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape*rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.hpp:27:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/link_follower.hpp:27:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape*rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.cpp:62:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/link_follower.cpp:62:14: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
             ((Entity*)rectangle)->type() != BOSS ||
              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/link_follower.cpp:87:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/link_follower.cpp:87:22: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
                     ((Entity*) rectangle)->type() != PLAYER
                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:18:17: [31m[35mstyle: inconclusive:[39m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/entity/mob/moldorm.hpp:18:17: [31m[35mstyle: inconclusive:[39m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list. [initializerList][0m
         Sprite* sprite_;
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:119:9: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/moldorm.cpp:119:9: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
         sprite_(sprite),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.hpp:18:17: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
+[1m../zelda/src/entity/mob/moldorm.hpp:18:17: [2mnote:[0m Member variable 'MoldormNode::sprite_' is in the wrong place in the initializer list.
         Sprite* sprite_;
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
         hitbox_(new MoldormHitbox(this))
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/entity/mob/moldorm.cpp:30:9: [31mwarning:[39m Class 'Moldorm' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
         hitbox_(new MoldormHitbox(this))
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:100:64: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/moldorm.cpp:100:64: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return rectangle != hitbox_ && (!rectangle->IsEntity() || ((Entity*)rectangle)->type() == PLAYER);
                                                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/moldorm.cpp:106:0: [31mstyle:[39m Consider using std::any_of algorithm instead of a raw loop. [useStlAlgorithm][0m
+[1m../zelda/src/entity/mob/moldorm.cpp:106:0: [31mstyle:[39m Consider using std::any_of algorithm instead of a raw loop. [useStlAlgorithm][0m
             if(node->CollidesWith(rectangle))
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.hpp:17:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/mob/stalfos.hpp:17:10: [31mstyle:[39m The function 'Dead' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:38:18: [2mnote:[0m Virtual function in base class
     virtual void Dead();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/mob/stalfos.hpp:17:10: [2mnote:[0m Function in derived class
     void Dead();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/stalfos.cpp:41:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/mob/stalfos.cpp:41:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     Link* player = (Link*)level_->main_player();
                    ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.hpp:14:10: [31mstyle:[39m The function 'CanReceiveDamageFrom' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/plant.hpp:14:10: [31mstyle:[39m The function 'CanReceiveDamageFrom' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:26:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:26:18: [2mnote:[0m Virtual function in base class
     virtual bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/plant.hpp:14:10: [2mnote:[0m Function in derived class
     bool CanReceiveDamageFrom(RectangleShape const * rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/plant.cpp:20:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/object/plant.cpp:20:38: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return rectangle->IsEntity() && ((Entity*) rectangle)->type() == PLAYER;
                                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:21:10: [31mwarning:[39m The class 'Pole' defines member variable with name 'type_' also defined in its parent class 'Entity'. [duplInheritedMember][0m
+[1m../zelda/src/entity/object/pole.hpp:21:10: [31mwarning:[39m The class 'Pole' defines member variable with name 'type_' also defined in its parent class 'Entity'. [duplInheritedMember][0m
     Type type_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:48:16: [2mnote:[0m Parent variable 'Entity::type_'
+[1m../zelda/src/entity.hpp:48:16: [2mnote:[0m Parent variable 'Entity::type_'
     EntityType type_;
                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:21:10: [2mnote:[0m Derived variable 'Pole::type_'
+[1m../zelda/src/entity/object/pole.hpp:21:10: [2mnote:[0m Derived variable 'Pole::type_'
     Type type_;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:16:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole.hpp:16:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole.hpp:16:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:18:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole.hpp:18:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole.hpp:18:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole.hpp:18:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole_switch.hpp:11:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:12:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite() const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:11:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole_switch.hpp:11:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite() const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole_switch.hpp:12:13: [31mstyle:[39m The function 'CurrentSprite' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/hitbox.hpp:13:21: [2mnote:[0m Virtual function in base class
     virtual Sprite* CurrentSprite(vec2f& sprite_position) const = 0;
                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:12:13: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole_switch.hpp:12:13: [2mnote:[0m Function in derived class
     Sprite* CurrentSprite(vec2f& position) const;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:13:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole_switch.hpp:13:10: [31mstyle:[39m The function 'CanCollideWith' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/math/rectangle.hpp:24:18: [2mnote:[0m Virtual function in base class
     virtual bool CanCollideWith(RectangleShape* rectangle) const;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole_switch.hpp:13:10: [2mnote:[0m Function in derived class
     bool CanCollideWith(RectangleShape* rectangle) const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:15:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole_switch.hpp:15:10: [31mstyle:[39m The function 'Draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/drawable.hpp:18:18: [2mnote:[0m Virtual function in base class
     virtual void Draw() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:15:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole_switch.hpp:15:10: [2mnote:[0m Function in derived class
     void Draw() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:16:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/entity/object/pole_switch.hpp:16:10: [31mstyle:[39m The function 'Damage' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Damage(Entity* from, int amount);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/entity.hpp:39:18: [2mnote:[0m Virtual function in base class
     virtual void Damage(Entity* from, int damage);
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/entity/object/pole_switch.hpp:16:10: [2mnote:[0m Function in derived class
     void Damage(Entity* from, int amount);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/object/pole_switch.cpp:41:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/entity/object/pole_switch.cpp:41:39: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     return !rectangle->IsEntity() || ((Entity*)rectangle)->type() == PLAYER;
                                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:35:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/game.hpp:35:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
  void Finalize();
       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:155:12: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.cpp:155:12: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
 void Game::Finalize()
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:35:7: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.hpp:35:7: [2mnote:[0m Technically the member function 'Game::Finalize' can be static (but you may consider moving to unnamed namespace).
  void Finalize();
       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:41:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/game.hpp:41:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
     void Exit();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:241:12: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.cpp:241:12: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
 void Game::Exit() {
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:41:10: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.hpp:41:10: [2mnote:[0m Technically the member function 'Game::Exit' can be static (but you may consider moving to unnamed namespace).
     void Exit();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:44:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/game.hpp:44:7: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
  void ReadMouse(int button, int state, int x, int y);
       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:167:12: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.cpp:167:12: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
 void Game::ReadMouse(int button, int state, int x, int y)
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:44:7: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.hpp:44:7: [2mnote:[0m Technically the member function 'Game::ReadMouse' can be static (but you may consider moving to unnamed namespace).
  void ReadMouse(int button, int state, int x, int y);
       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:47:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
+[1m../zelda/src/game.hpp:47:10: [31m[35mperformance: inconclusive:[39m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace). [functionStatic][0m
     void Reshape(int width, int height);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:190:12: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.cpp:190:12: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
 void Game::Reshape(int width, int height) {
            ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.hpp:47:10: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
+[1m../zelda/src/game.hpp:47:10: [2mnote:[0m Technically the member function 'Game::Reshape' can be static (but you may consider moving to unnamed namespace).
     void Reshape(int width, int height);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:11:5: [31mstyle:[39m Class 'OverScreen' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/screen/over_screen.hpp:11:5: [31mstyle:[39m Class 'OverScreen' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
     OverScreen(const std::string& level_name);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/level_screen.hpp:13:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:13:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/level_screen.hpp:13:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/level_screen.hpp:14:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/level_screen.hpp:14:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:16:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/title_screen.hpp:16:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
     virtual void Init();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/title_screen.hpp:16:10: [2mnote:[0m Function in derived class
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:17:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/title_screen.hpp:17:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/title_screen.hpp:17:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:18:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/title_screen.hpp:18:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.hpp:18:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/title_screen.hpp:18:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/over_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
     virtual void Init();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/over_screen.hpp:14:10: [2mnote:[0m Function in derived class
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/over_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:15:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/over_screen.hpp:15:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/over_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/over_screen.hpp:16:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/win_screen.hpp:14:10: [31mstyle:[39m The function 'Init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:9:18: [2mnote:[0m Virtual function in base class
     virtual void Init();
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:14:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/win_screen.hpp:14:10: [2mnote:[0m Function in derived class
     void Init();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/win_screen.hpp:15:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:10:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:15:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/win_screen.hpp:15:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/screen/win_screen.hpp:16:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/screen.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.hpp:16:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/screen/win_screen.hpp:16:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:11:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::width' can be const. [functionConst][0m
+[1m../zelda/src/graphic/animation.hpp:11:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::width' can be const. [functionConst][0m
     float width();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:66:18: [2mnote:[0m Technically the member function 'Animation::width' can be const.
+[1m../zelda/src/graphic/animation.cpp:66:18: [2mnote:[0m Technically the member function 'Animation::width' can be const.
 float Animation::width() {
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:11:11: [2mnote:[0m Technically the member function 'Animation::width' can be const.
+[1m../zelda/src/graphic/animation.hpp:11:11: [2mnote:[0m Technically the member function 'Animation::width' can be const.
     float width();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:12:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::height' can be const. [functionConst][0m
+[1m../zelda/src/graphic/animation.hpp:12:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'Animation::height' can be const. [functionConst][0m
     float height();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:70:18: [2mnote:[0m Technically the member function 'Animation::height' can be const.
+[1m../zelda/src/graphic/animation.cpp:70:18: [2mnote:[0m Technically the member function 'Animation::height' can be const.
 float Animation::height() {
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.hpp:12:11: [2mnote:[0m Technically the member function 'Animation::height' can be const.
+[1m../zelda/src/graphic/animation.hpp:12:11: [2mnote:[0m Technically the member function 'Animation::height' can be const.
     float height();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:20:15: [31m[35mstyle: inconclusive:[39m Member variable 'Effect::drawable_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/graphic/effect.hpp:20:15: [31m[35mstyle: inconclusive:[39m Member variable 'Effect::drawable_' is in the wrong place in the initializer list. [initializerList][0m
     Drawable* drawable_;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.cpp:11:9: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/effect.cpp:11:9: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
         drawable_(0)
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:20:15: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/effect.hpp:20:15: [2mnote:[0m Member variable 'Effect::drawable_' is in the wrong place in the initializer list.
     Drawable* drawable_;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:36:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/graphic/effect/bounce.cpp:36:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         ((Entity*)drawable_)->NotifyCollisions();
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:10:36: [31m[35mstyle: inconclusive:[39m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'. [funcArgNamesDifferent][0m
+[1m../zelda/src/graphic/effect/bounce.cpp:10:36: [31m[35mstyle: inconclusive:[39m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'. [funcArgNamesDifferent][0m
 Bounce::Bounce(float height, float t) :
                                    ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.hpp:12:32: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
+[1m../zelda/src/graphic/effect/bounce.hpp:12:32: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
     Bounce(float height, float duration);
                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/bounce.cpp:10:36: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
+[1m../zelda/src/graphic/effect/bounce.cpp:10:36: [2mnote:[0m Function 'Bounce' argument 2 names different: declaration 'duration' definition 't'.
 Bounce::Bounce(float height, float t) :
                                    ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:22:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/dialog.hpp:22:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:22:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/dialog.hpp:22:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:24:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/dialog.hpp:24:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:24:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/dialog.hpp:24:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:25:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/dialog.hpp:25:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:25:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/dialog.hpp:25:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/dialog.hpp:20:40: [31mperformance:[39m Function parameter 'messages' should be passed by const reference. [passedByValue][0m
+[1m../zelda/src/graphic/effect/dialog.hpp:20:40: [31mperformance:[39m Function parameter 'messages' should be passed by const reference. [passedByValue][0m
     Dialog(const std::vector<Message*> messages, const CallbackEffect::Callback& callback);
                                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:16:11: [31m[35mstyle: inconclusive:[39m Member variable 'Float::speed_' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/graphic/effect/float.hpp:16:11: [31m[35mstyle: inconclusive:[39m Member variable 'Float::speed_' is in the wrong place in the initializer list. [initializerList][0m
     float speed_;
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.cpp:10:9: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/effect/float.cpp:10:9: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
         speed_(-height / duration),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/float.hpp:16:11: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/effect/float.hpp:16:11: [2mnote:[0m Member variable 'Float::speed_' is in the wrong place in the initializer list.
     float speed_;
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:17:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/menu.hpp:17:10: [31mstyle:[39m The function 'IsFinished' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:11:18: [2mnote:[0m Virtual function in base class
     virtual bool IsFinished() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:17:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/menu.hpp:17:10: [2mnote:[0m Function in derived class
     bool IsFinished() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:19:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/menu.hpp:19:10: [31mstyle:[39m The function 'Tick' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:13:18: [2mnote:[0m Virtual function in base class
     virtual void Tick(double delta) = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:19:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/menu.hpp:19:10: [2mnote:[0m Function in derived class
     void Tick(double delta);
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:20:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
+[1m../zelda/src/graphic/effect/menu.hpp:20:10: [31mstyle:[39m The function 'Render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride][0m
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
+[1m../zelda/src/graphic/effect.hpp:14:18: [2mnote:[0m Virtual function in base class
     virtual void Render() const = 0;
                  ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/menu.hpp:20:10: [2mnote:[0m Function in derived class
+[1m../zelda/src/graphic/effect/menu.hpp:20:10: [2mnote:[0m Function in derived class
     void Render() const;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.cpp:21:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/graphic/effect/rotation_fade.cpp:21:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     float auxX = -((Entity*)this->drawable_)->position().x-((Entity*)this->drawable_)->width()/2;
                    ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/effect/rotation_fade.cpp:22:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/graphic/effect/rotation_fade.cpp:22:20: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     float auxY = -((Entity*)this->drawable_)->position().y-((Entity*)this->drawable_)->height()/2;
                    ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:26:10: [31mstyle:[39m The scope of the variable 'c' can be reduced. [variableScope][0m
+[1m../zelda/src/graphic/font.cpp:26:10: [31mstyle:[39m The scope of the variable 'c' can be reduced. [variableScope][0m
     char c;
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:24:49: [31m[35mstyle: inconclusive:[39m Function 'Render' argument 3 names different: declaration 'c' definition 'text'. [funcArgNamesDifferent][0m
+[1m../zelda/src/graphic/font.cpp:24:49: [31m[35mstyle: inconclusive:[39m Function 'Render' argument 3 names different: declaration 'c' definition 'text'. [funcArgNamesDifferent][0m
 void Font::Render(float x, float y, const char* text) {
                                                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.hpp:16:54: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
+[1m../zelda/src/graphic/font.hpp:16:54: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
     static void Render(float x, float y, const char* c);
                                                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/font.cpp:24:49: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
+[1m../zelda/src/graphic/font.cpp:24:49: [2mnote:[0m Function 'Render' argument 3 names different: declaration 'c' definition 'text'.
 void Font::Render(float x, float y, const char* text) {
                                                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/hitbox/animation_hitbox.cpp:22:17: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/graphic/hitbox/animation_hitbox.cpp:22:17: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
     Hitbox* h = (Hitbox*) rectangle;
                 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/pixelmap.cpp:5:5: [31mperformance:[39m Variable 'map_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+[1m../zelda/src/graphic/pixelmap.cpp:5:5: [31mperformance:[39m Variable 'map_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
     map_ = std::vector<std::vector<bool>>(height, std::vector<bool>(width, false));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/pixelmap.cpp:11:37: [31mstyle:[39m Clarify calculation precedence for '<<' and '?'. [clarifyCalculation][0m
+[1m../zelda/src/graphic/pixelmap.cpp:11:37: [31mstyle:[39m Clarify calculation precedence for '<<' and '?'. [clarifyCalculation][0m
             std::cout << map_[i][j] ? '1' : '0';
                                     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     hit_map_ = damage_map_ = new Pixelmap(width, height);
                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/graphic/sprite.cpp:17:16: [31mwarning:[39m Class 'Sprite' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     hit_map_ = damage_map_ = new Pixelmap(width, height);
                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.hpp:11:9: [31m[35mstyle: inconclusive:[39m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/graphic/sprite_set.hpp:11:9: [31m[35mstyle: inconclusive:[39m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list. [initializerList][0m
     int idle_index;
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.cpp:12:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/sprite_set.cpp:12:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
         idle_index(idle_index),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/sprite_set.hpp:11:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
+[1m../zelda/src/graphic/sprite_set.hpp:11:9: [2mnote:[0m Member variable 'SpriteSet::idle_index' is in the wrong place in the initializer list.
     int idle_index;
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/spritesheet.cpp:10:5: [31mperformance:[39m Variable 'texture_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+[1m../zelda/src/graphic/spritesheet.cpp:10:5: [31mperformance:[39m Variable 'texture_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
     texture_ = LoadTexture(path);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/main.cpp:59:8: [31mstyle:[39m Variable 'res_x' is assigned a value that is never used. [unreadVariable][0m
+[1m../zelda/src/main.cpp:59:8: [31mstyle:[39m Variable 'res_x' is assigned a value that is never used. [unreadVariable][0m
  res_x = glutGet(GLUT_SCREEN_WIDTH);
        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/main.cpp:60:8: [31mstyle:[39m Variable 'res_y' is assigned a value that is never used. [unreadVariable][0m
+[1m../zelda/src/main.cpp:60:8: [31mstyle:[39m Variable 'res_y' is assigned a value that is never used. [unreadVariable][0m
  res_y = glutGet(GLUT_SCREEN_HEIGHT);
        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:37:5: [31mperformance:[39m Variable 'nodes_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
+[1m../zelda/src/map/level.cpp:37:5: [31mperformance:[39m Variable 'nodes_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList][0m
     nodes_ = std::vector<std::vector<Path::Node*>>(map_->height_pixels / Path::RESOLUTION,
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     dynamic_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/map/level.cpp:39:5: [31mwarning:[39m Class 'Level' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     dynamic_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:437:67: [31m[35mstyle: inconclusive:[39m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'. [funcArgNamesDifferent][0m
+[1m../zelda/src/map/level.cpp:437:67: [31m[35mstyle: inconclusive:[39m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'. [funcArgNamesDifferent][0m
 void Level::Transition(const std::string& map, const std::string& place_) {
                                                                   ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.hpp:40:64: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
+[1m../zelda/src/map/level.hpp:40:64: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
     void Transition(const std::string& map, const std::string& place);
                                                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:437:67: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
+[1m../zelda/src/map/level.cpp:437:67: [2mnote:[0m Function 'Transition' argument 2 names different: declaration 'place' definition 'place_'.
 void Level::Transition(const std::string& map, const std::string& place_) {
                                                                   ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:289:51: [31mperformance:[39m Function parameter 'location' should be passed by const reference. [passedByValue][0m
+[1m../zelda/src/map/level.cpp:289:51: [31mperformance:[39m Function parameter 'location' should be passed by const reference. [passedByValue][0m
 void Level::AddPlayer(Entity* player, std::string location) {
                                                   ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:419:40: [31mstyle:[39m Parameter 'entity' can be declared with const [constParameter][0m
+[1m../zelda/src/map/level.cpp:419:40: [31mstyle:[39m Parameter 'entity' can be declared with const [constParameter][0m
 void Level::RemovePendingPaths(Entity* entity) {
                                        ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/level.cpp:185:13: [31mperformance:[39m Prefer prefix ++/-- operators for non-primitive types. [postfixOperator][0m
+[1m../zelda/src/map/level.cpp:185:13: [31mperformance:[39m Prefer prefix ++/-- operators for non-primitive types. [postfixOperator][0m
             it++;
             ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/location.cpp:41:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
+[1m../zelda/src/map/location.cpp:41:10: [31mstyle:[39m C-style pointer casting [cstyleCast][0m
         ((Mob*) entity)->set_facing(Dir::fromVector(vec2f(xdir, ydir)));
          ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:40:11: [31m[35mstyle: inconclusive:[39m Member variable 'Path::rest' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/map/path.hpp:40:11: [31m[35mstyle: inconclusive:[39m Member variable 'Path::rest' is in the wrong place in the initializer list. [initializerList][0m
     float rest;
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:13:9: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
+[1m../zelda/src/map/path.cpp:13:9: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
         rest(0)
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:40:11: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
+[1m../zelda/src/map/path.hpp:40:11: [2mnote:[0m Member variable 'Path::rest' is in the wrong place in the initializer list.
     float rest;
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:11:15: [31m[35mstyle: inconclusive:[39m Member variable 'Node::parent' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/map/path.hpp:11:15: [31m[35mstyle: inconclusive:[39m Member variable 'Node::parent' is in the wrong place in the initializer list. [initializerList][0m
         Node* parent;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:46:9: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
+[1m../zelda/src/map/path.cpp:46:9: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
         parent(parent),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.hpp:11:15: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
+[1m../zelda/src/map/path.hpp:11:15: [2mnote:[0m Member variable 'Node::parent' is in the wrong place in the initializer list.
         Node* parent;
               ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
         rectangle(new RectangleShape(0, 0, from->width(), from->height())),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/map/path.cpp:8:9: [31mwarning:[39m Class 'Path' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
         rectangle(new RectangleShape(0, 0, from->width(), from->height())),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     static_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/map/tile_map.cpp:14:5: [31mwarning:[39m Class 'TileMap' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     static_collidables_ = new Quadtree(0, RectangleShape(0, 0, map_->width_pixels, map_->height_pixels));
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:9:30: [31m[35mstyle: inconclusive:[39m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'. [funcArgNamesDifferent][0m
+[1m../zelda/src/map/tile_map.cpp:9:30: [31m[35mstyle: inconclusive:[39m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'. [funcArgNamesDifferent][0m
 TileMap::TileMap(const char* name)
                              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.hpp:12:22: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
+[1m../zelda/src/map/tile_map.hpp:12:22: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
  TileMap(const char* s);
                      ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tile_map.cpp:9:30: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
+[1m../zelda/src/map/tile_map.cpp:9:30: [2mnote:[0m Function 'TileMap' argument 1 names different: declaration 's' definition 'name'.
 TileMap::TileMap(const char* name)
                              ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:12:9: [31m[35mstyle: inconclusive:[39m Member variable 'Tileset::frames' is in the wrong place in the initializer list. [initializerList][0m
+[1m../zelda/src/map/tileset.hpp:12:9: [31m[35mstyle: inconclusive:[39m Member variable 'Tileset::frames' is in the wrong place in the initializer list. [initializerList][0m
     int frames;
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.cpp:8:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
+[1m../zelda/src/map/tileset.cpp:8:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
         frames(tileset->frames),
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/map/tileset.hpp:12:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
+[1m../zelda/src/map/tileset.hpp:12:9: [2mnote:[0m Member variable 'Tileset::frames' is in the wrong place in the initializer list.
     int frames;
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:13:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::x' can be const. [functionConst][0m
+[1m../zelda/src/math/rectangle.hpp:13:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::x' can be const. [functionConst][0m
     float x();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:45:23: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
+[1m../zelda/src/math/rectangle.cpp:45:23: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
 float RectangleShape::x() {
                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:13:11: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
+[1m../zelda/src/math/rectangle.hpp:13:11: [2mnote:[0m Technically the member function 'RectangleShape::x' can be const.
     float x();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:14:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::y' can be const. [functionConst][0m
+[1m../zelda/src/math/rectangle.hpp:14:11: [31m[35mstyle: inconclusive:[39m Technically the member function 'RectangleShape::y' can be const. [functionConst][0m
     float y();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:49:23: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
+[1m../zelda/src/math/rectangle.cpp:49:23: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
 float RectangleShape::y() {
                       ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.hpp:14:11: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
+[1m../zelda/src/math/rectangle.hpp:14:11: [2mnote:[0m Technically the member function 'RectangleShape::y' can be const.
     float y();
           ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     level = new Level(name, hud);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/screen/level_screen.cpp:16:5: [31mwarning:[39m Class 'LevelScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     level = new Level(name, hud);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     over_ = new OverScreenPrivate::Over(level_name);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/screen/over_screen.cpp:70:5: [31mwarning:[39m Class 'OverScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     over_ = new OverScreenPrivate::Over(level_name);
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/over_screen.cpp:21:9: [31mstyle:[39m Class 'Over' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
+[1m../zelda/src/screen/over_screen.cpp:21:9: [31mstyle:[39m Class 'Over' has a constructor with 1 argument that is not explicit. [noExplicitConstructor][0m
         Over(const std::string& level_name) :
         ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     title_ = new TitleScreenPrivate::Title();
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/screen/title_screen.cpp:217:5: [31mwarning:[39m Class 'TitleScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     title_ = new TitleScreenPrivate::Title();
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
+[1m../zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor][0m
     win_ = new WinScreenPrivate::Win();
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
+[1m../zelda/src/screen/win_screen.cpp:47:5: [31mwarning:[39m Class 'WinScreen' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq][0m
     win_ = new WinScreenPrivate::Win();
     ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.cpp:15:32: [31m[35mstyle: inconclusive:[39m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'. [funcArgNamesDifferent][0m
+[1m../zelda/src/utils.cpp:15:32: [31m[35mstyle: inconclusive:[39m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'. [funcArgNamesDifferent][0m
 GLuint LoadTexture(const char* file) {
                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.hpp:4:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
+[1m../zelda/src/utils.hpp:4:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
 GLuint LoadTexture(const char* path);
                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/utils.cpp:15:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
+[1m../zelda/src/utils.cpp:15:32: [2mnote:[0m Function 'LoadTexture' argument 1 names different: declaration 'path' definition 'file'.
 GLuint LoadTexture(const char* file) {
                                ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob/ai/chase_evade.cpp:48:0: [31mstyle:[39m The function 'Contrary' is never used. [unusedFunction][0m
+[1m../zelda/src/entity/mob/ai/chase_evade.cpp:48:0: [31mstyle:[39m The function 'Contrary' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:155:0: [31mstyle:[39m The function 'Finalize' is never used. [unusedFunction][0m
+[1m../zelda/src/game.cpp:155:0: [31mstyle:[39m The function 'Finalize' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/game.cpp:251:0: [31mstyle:[39m The function 'KeyStatus' is never used. [unusedFunction][0m
+[1m../zelda/src/game.cpp:251:0: [31mstyle:[39m The function 'KeyStatus' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/entity/mob.cpp:199:0: [31mstyle:[39m The function 'MoveTowards' is never used. [unusedFunction][0m
+[1m../zelda/src/entity/mob.cpp:199:0: [31mstyle:[39m The function 'MoveTowards' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:17:0: [31mstyle:[39m The function 'current_frame' is never used. [unusedFunction][0m
+[1m../zelda/src/graphic/animation.cpp:17:0: [31mstyle:[39m The function 'current_frame' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/graphic/animation.cpp:21:0: [31mstyle:[39m The function 'set_current_frame' is never used. [unusedFunction][0m
+[1m../zelda/src/graphic/animation.cpp:21:0: [31mstyle:[39m The function 'set_current_frame' is never used. [unusedFunction][0m
 
 ^
-[1m/home/vuk/Desktop/Zelda-final/zelda/src/math/rectangle.cpp:19:0: [31mstyle:[39m The function 'top_center' is never used. [unusedFunction][0m
+[1m../zelda/src/math/rectangle.cpp:19:0: [31mstyle:[39m The function 'top_center' is never used. [unusedFunction][0m
 
 ^

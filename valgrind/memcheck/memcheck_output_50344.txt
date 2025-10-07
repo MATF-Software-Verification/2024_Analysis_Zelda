@@ -1,0 +1,78 @@
+==50348== Memcheck, a memory error detector
+==50348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==50348== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==50348== Command: /home/vuk/Desktop/2024_Analysis_Zelda/valgrind/memcheck/../../zelda/cmake-build-debug/zelda
+==50348== Parent PID: 50347
+==50348== 
+==50348== Invalid read of size 8
+==50348==    at 0x40286A8: strncmp (strcmp.S:172)
+==50348==    by 0x400668D: is_dst (dl-load.c:216)
+==50348==    by 0x400810E: _dl_dst_count (dl-load.c:253)
+==50348==    by 0x400810E: expand_dynamic_string_token (dl-load.c:395)
+==50348==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==50348==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==50348==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==50348==    by 0x4003494: openaux (dl-deps.c:64)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==50348==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==50348==  Address 0x5889099 is 9 bytes inside a block of size 15 alloc'd
+==50348==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50348==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==50348==    by 0x40271DF: strdup (strdup.c:42)
+==50348==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==50348==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==50348==    by 0x4003494: openaux (dl-deps.c:64)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==50348==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==50348== 
+==50348== Invalid read of size 8
+==50348==    at 0x40286A8: strncmp (strcmp.S:172)
+==50348==    by 0x400668D: is_dst (dl-load.c:216)
+==50348==    by 0x4007F79: _dl_dst_substitute (dl-load.c:295)
+==50348==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==50348==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==50348==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==50348==    by 0x4003494: openaux (dl-deps.c:64)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==50348==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==50348==  Address 0x5889099 is 9 bytes inside a block of size 15 alloc'd
+==50348==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50348==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==50348==    by 0x40271DF: strdup (strdup.c:42)
+==50348==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==50348==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==50348==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==50348==    by 0x4003494: openaux (dl-deps.c:64)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==50348==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==50348==    by 0x4EF4B07: _dl_catch_exception (dl-error-skeleton.c:208)
+==50348==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==50348== 
+==50348== 
+==50348== HEAP SUMMARY:
+==50348==     in use at exit: 2,454,691 bytes in 21,971 blocks
+==50348==   total heap usage: 670,699 allocs, 648,728 frees, 264,351,122 bytes allocated
+==50348== 
+==50348== LEAK SUMMARY:
+==50348==    definitely lost: 8,448 bytes in 168 blocks
+==50348==    indirectly lost: 1,878,465 bytes in 18,561 blocks
+==50348==      possibly lost: 0 bytes in 0 blocks
+==50348==    still reachable: 567,778 bytes in 3,242 blocks
+==50348==         suppressed: 0 bytes in 0 blocks
+==50348== Rerun with --leak-check=full to see details of leaked memory
+==50348== 
+==50348== For lists of detected and suppressed errors, rerun with: -s
+==50348== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
