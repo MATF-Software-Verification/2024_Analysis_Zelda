@@ -10,13 +10,27 @@ Heš kod commit-a: `73cf1f211b3a28f7a0cbdf429503f9396276cd3c`
 
 Cilj analize je poboljšanje stabilnosti i efikasnosti aplikacije korišćenjem statičkih i dinamičkih alata za analizu koda.  
 
-## Izmena Projekta
-Potrebno je postaviti working directory na putanju do projekta kako bi sve funkcionalnosti pravilno radile.
+## Priprema Projekta
+
+Pre pokretanja analiza, potrebno je da se projekat ispravno klonira, pripremi za build i da se generiše fajl compile_commands.json koji koriste alati poput Clang-Tidy.
+
+## Kloniranje repozitorijuma sa submodulima
+- **git submodule update --init --recursive**
+
 
 ### Primena custom.patch:
 - **cd Zelda**
 - **git apply ../custom.patch**
 
+## Kreiranje build direktorijuma
+- **mkdir cmake-build-debug**
+- **cd cmake-build-debug**
+
+## Generisanje compile_commands.json fajla
+-**cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON**
+
+## Kompilacija projekta
+-**make**
 
 ## Instalacija alata
 
