@@ -22,31 +22,22 @@ Pre pokretanja analiza, potrebno je da se projekat ispravno klonira, pripremi za
 - **cd Zelda**
 - **git apply ../custom.patch**
 
+
 ## Kreiranje build direktorijuma
 - **mkdir cmake-build-debug**
 - **cd cmake-build-debug**
 
+## Instalacija biblioteka
+- **sudo apt install -y libgl1-mesa-dev libx11-dev libxrandr-dev libfreetype6-dev \
+  libopenal-dev libflac-dev libvorbis-dev libudev-de**
+  
 ## Generisanje compile_commands.json fajla
--**cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON**
+- **cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON**
 
 ## Kompilacija projekta
--**make**
+- **make**
 
 ## Instalacija alata
-
-Za verifikaciju koda korišćeni su sledeći alati:
-
-- **Cppcheck** – statička analiza koda
-- **Clang-Tidy** – analiza kvaliteta i optimizacije C++ koda
-- **Doxygen** – generisanje automatske dokumentacije
-- **Valgrind Memcheck** – analiza memorije i otkrivanje curenja memorije
-- **Valgrind Callgrind** – profilisanje performansi i analiza efikasnosti koda
-
-
-
-## Instalacija alata
-
-Pre pokretanja analize potrebno je instalirati sledeće alate:
 
 ```bash
 sudo apt install cppcheck
@@ -55,6 +46,7 @@ sudo apt install doxygen
 sudo apt install valgrind
 sudo apt install kcachegrind
 ```
+
 
 ## Korišćeni alati i analiza rezultata
 
