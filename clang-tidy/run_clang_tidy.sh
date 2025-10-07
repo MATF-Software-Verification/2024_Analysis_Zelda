@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Relativne putanje (bez hard-kodiranog /home/...):
+# Relativne putanje:
 DIR="$(cd "$(dirname "$0")" && pwd)"
 BUILD_DIR="$DIR/../zelda/cmake-build-debug"
 
