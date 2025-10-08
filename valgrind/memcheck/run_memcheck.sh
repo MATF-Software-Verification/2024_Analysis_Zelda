@@ -7,7 +7,6 @@ exe_path="$work_dir/cmake-build-debug/zelda"
 pid=$$
 memcheck_output_file="memcheck_output_$pid.txt"
 
-# Pokreni iz radnog direktorijuma
 (
   cd "$work_dir" || exit 1
   G_SLICE=always-malloc MALLOC_CHECK_=3 valgrind --tool=memcheck \
