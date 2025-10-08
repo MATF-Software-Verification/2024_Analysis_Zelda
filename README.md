@@ -19,7 +19,7 @@ Pre pokretanja analiza, potrebno je da se projekat ispravno klonira, pripremi za
 
 
 ### Primena custom.patch:
-- **cd Zelda**
+- **cd zelda**
 - **git apply ../custom.patch**
 
 
@@ -28,8 +28,8 @@ Pre pokretanja analiza, potrebno je da se projekat ispravno klonira, pripremi za
 - **cd cmake-build-debug**
 
 ## Instalacija biblioteka
-- **sudo apt install -y libgl1-mesa-dev libx11-dev libxrandr-dev libfreetype6-dev \
-  libopenal-dev libflac-dev libvorbis-dev libudev-de**
+- **sudo apt install -y libgl1-mesa-dev libx11-dev  libopenal-dev libsndfile1-dev libglew-dev freeglut3-dev libxrandr-dev libfreetype6-dev \
+ libflac-dev libvorbis-dev libudev-dev**
   
 ## Generisanje compile_commands.json fajla
 - **cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON**
