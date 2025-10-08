@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 work_dir="$SCRIPT_DIR/../../zelda"
-exe_path="$work_dir/cmake-build-debug/zelda"   # malo slovo!
+exe_path="$work_dir/cmake-build-debug/zelda"  
 
 pid=$$
 memcheck_output_file="memcheck_output_$pid.txt"
